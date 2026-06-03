@@ -1,0 +1,189 @@
+- generic [active] [ref=e1]:
+  - banner:
+    - generic:
+      - generic [ref=e2]:
+        - link "CIDCO Homes" [ref=e3] [cursor=pointer]:
+          - /url: "#top"
+          - img "CIDCO Homes - शहरांचे शिल्पकार" [ref=e4]
+        - navigation [ref=e5]:
+          - link "सिडको इस्टेट" [ref=e6] [cursor=pointer]:
+            - /url: "#about"
+          - link "तळोजाच का?" [ref=e7] [cursor=pointer]:
+            - /url: "#why"
+          - link "कनेक्टिव्हिटी" [ref=e8] [cursor=pointer]:
+            - /url: "#connectivity"
+          - link "प्रकल्प तपशील" [ref=e9] [cursor=pointer]:
+            - /url: "#projects"
+          - link "आमचे भागीदार" [ref=e10] [cursor=pointer]:
+            - /url: "#partners"
+        - link "CIDCO Estate" [ref=e11] [cursor=pointer]:
+          - /url: "#top"
+          - img "CIDCO Estate - तरक्की का नाम तळोजा" [ref=e12]
+      - generic [ref=e13]:
+        - button "ENG" [ref=e14] [cursor=pointer]
+        - button "मराठी" [ref=e15] [cursor=pointer]
+  - region "CIDCO Estate highlights" [ref=e16]:
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - generic "CIDCO Estate Township" [ref=e19]
+        - paragraph [ref=e21]:
+          - text: जिथे आधुनिक जीवनशैली आणि सोयीसुविधांचा
+          - text: मेळ घालून तुमचं स्वप्नांचं घर साकारलं जातं
+        - generic [ref=e22]: संग्रहीत व कलात्मक प्रतिमा
+      - generic [ref=e23]:
+        - img "Metro Connectivity" [ref=e24]
+        - paragraph [ref=e26]: मेट्रो, रेल्वे, हायवेचे जाळे आणि नवी मुंबई आंतरराष्ट्रीय विमानतळाच्या थेट व जलद अ‍ॅक्सेसमुळे प्रवासाची उत्तम सोय.
+        - generic [ref=e27]: संग्रहीत व कलात्मक प्रतिमा
+      - generic [ref=e28]:
+        - img "Green Surroundings" [ref=e29]
+        - paragraph [ref=e31]: प्रसन्न वातावरणाचा अनुभव आता तुम्हाला मिळेल निसर्गरम्य आणि शांत परिसराच्या सान्निध्यात, ते ही तुमच्या घराच्या सभोवताली.
+        - generic [ref=e32]: संग्रहीत व कलात्मक प्रतिमा
+      - generic [ref=e33]:
+        - img "Planned Township" [ref=e34]
+        - paragraph [ref=e36]: सुपरमार्केट, बाजारपेठा, हॉस्पिटल, शाळा आणि कॉलेज सर्व काही अगदी जवळ असलेली एक नियोजनबद्ध टाऊनशिप!
+        - generic [ref=e37]: संग्रहीत व कलात्मक प्रतिमा
+      - generic [ref=e38]:
+        - img "Quality Construction" [ref=e39]
+        - paragraph [ref=e41]: एल अँड टी आणि बी. जी. शिर्के यांचे दर्जेदार बांधकाम, जे देतात गुणवत्तेचा भक्कम विश्वास!
+        - generic [ref=e42]: संग्रहीत व कलात्मक प्रतिमा
+      - generic [ref=e43]:
+        - img "Business Hub" [ref=e44]
+        - paragraph [ref=e46]: २२.६* लाखांपासून आरामदायी घरे ती सुद्धा अत्याधुनिक सोयी-सुविधांसह.
+        - generic [ref=e47]: संग्रहीत व कलात्मक प्रतिमा
+    - button "मागील" [ref=e48] [cursor=pointer]: ‹
+    - button "पुढील" [ref=e49] [cursor=pointer]: ›
+    - tablist "Slide navigation" [ref=e50]:
+      - tab "Slide 1" [ref=e51] [cursor=pointer]
+      - tab "Slide 2" [ref=e52] [cursor=pointer]
+      - tab "Slide 3" [ref=e53] [cursor=pointer]
+      - tab "Slide 4" [ref=e54] [cursor=pointer]
+      - tab "Slide 5" [ref=e55] [cursor=pointer]
+      - tab "Slide 6" [ref=e56] [cursor=pointer]
+    - img [ref=e58] [cursor=pointer]
+  - generic [ref=e63]:
+    - generic [ref=e64]:
+      - heading "सिडको इस्टेट - तरक्की का नाम तळोजा" [level=2] [ref=e65]
+      - paragraph [ref=e66]: तुमचं हक्काच्या घराचं स्वप्न आता सत्यात उतरवण्यासाठी सिडको घेऊन आले आहे - सिडको इस्टेट - एका नव्या जगाची अनुभूती... तीही आपल्या नवी मुंबईत - खारघर (पूर्व), तळोजामध्ये! इथे तुम्हाला केवळ चार भिंतींचं घरच मिळणार नाही, तर तुमच्या पहिल्या हक्काच्या घरासोबत आधुनिक जीवनशैलीचा एक जागतिक दर्जाचा अनुभव तुम्हाला इथे घेता येईल. उद्याच्या प्रगत पायाभूत सुविधा, ज्या तुमच्या कुटुंबाचे दैनंदिन जीवनमान अधिक सोयीचे, सुरक्षित आणि आनंदी बनवतील.
+      - paragraph [ref=e67]: तुमच्या स्वप्नांना पंख देणारा आणि उज्ज्वल भविष्याची हमी देणारा एक सुखद प्रवास म्हणजे – सिडको इस्टेट – तरक्की का नाम तळोजा! सिडको इस्टेट म्हणजे केवळ इमारतींचा समूह नाही, तर अत्याधुनिक पद्धतीने विकसित केलेली एक भव्य, नियोजित आणि स्वयंपूर्ण टाऊनशिप आहे. केवळ पायाभूत सुविधाच नव्हे तर सिडकोने - सिडको इस्टेट - खारघर (पूर्व), तळोजामध्ये गृहसंकुले निर्माण करून सामान्यांचे जीवन अधिक सुखकर बनवले आहे. अगदी कमी किमतीत आधुनिक सोयी-सुविधांसह आरामदायी १ आणि २ बीएचके घरांचे स्वप्न आता सत्यात उतरू लागले आहे. उत्तम कनेक्टिव्हिटी, रुंद आणि प्रशस्त रस्ते, आधुनिक सुविधा, मोकळ्या आणि निसर्गरम्य जागा आणि परवडणाऱ्या अतिशय सुंदर घरांसह, - सिडको इस्टेट - खारघर (पूर्व), तळोजा आजच्या स्मार्ट पिढीची पहिली पसंती बनत आहे.
+      - paragraph [ref=e68]: सिडको इस्टेट - तरक्की का नाम तळोजा” ही केवळ एक मोहिम नाही, तर आपल्या कुटुंबासाठी अधिक चांगल्या जीवनाची सुरुवात आहे. कमी किमतीत आधुनिक जीवनशैली, सुरक्षित परिसर आणि उज्ज्वल भविष्याची खात्री देणारा हा वेगाने विकसित होत असलेला परिसर, तुमच्या स्वप्नातील घरासाठी एक आदर्श पर्याय आहे.
+    - img "CIDCO Estate buildings" [ref=e70]
+  - generic [ref=e71]:
+    - generic [ref=e72]:
+      - generic [ref=e73]:
+        - img "Navi Mumbai International Airport" [ref=e75]
+        - img "Independent Lifestyle" [ref=e77]
+        - img "Metro Connectivity" [ref=e79]
+        - img "Local Train" [ref=e81]
+      - generic [ref=e82]:
+        - heading "तळोजाच का?" [level=2] [ref=e83]
+        - paragraph [ref=e84]: खारघर (पूर्व), तळोजा हे आज केवळ एक निवासी ठिकाण नसून, नव्या प्रगतीचे आणि आधुनिक जीवनशैलीचे प्रतीक बनत आहे. सिडकोच्या सोबतीमुळे आज खारघर (पूर्व), तळोजामध्ये नियोजित विकास, उत्कृष्ट कनेक्टिव्हिटी आणि भविष्यातील मोठ्या आणि उत्तम पायाभूत सुविधा जनसामान्यांना मिळू लागल्या आहेत. त्यामुळे खारघर (पूर्व), तळोजा हे नवी मुंबईतील सर्वात वेगाने विकसित होणारे ठिकाण ठरत आहे.
+        - paragraph [ref=e85]: नवी मुंबईच्या होणाऱ्या आधुनिक परिवर्तनाच्या केंद्रस्थानी आज 'खारघर (पूर्व), तळोजा' अत्यंत दिमाखात उभे आहे. तळोजा पांचनंद रेल्वे स्टेशनसह खारघर व सीबीडी बेलापूरसाठी येथे मेट्रो सुरु आहे. आगामी काळात खांदेश्वर (नवी मुंबई विमानतळापर्यंत प्रस्तावित विस्तार) आणि कल्याण-तळोजा मेट्रो मार्गिकांमुळे येथील कनेक्टिव्हिटी आणखी मजबूत होईल. रस्त्यांच्या बाबतीत, खारघर-तळोजा उड्डाणपुलामुळे खारघरमधील जीवनशैली व शिक्षण संस्था जवळ आल्या आहेत; तर राष्ट्रीय महामार्ग ४ (NH 4) ने जोडले गेले आहेत. भविष्यातील खारघर कोस्टल रोड, खारघर-तुर्भे लिंक रोड आणि विरार-अलिबाग मल्टिमोडल कॉरिडॉर, तसेच आंतरराष्ट्रीय विमानतळाचे सानिध्य यामुळे एमएमआर क्षेत्रातील हे सर्वात धोरणात्मक ठिकाण ठरत आहे. याच प्रगत पायाभूत सुविधांमुळे तुमच्या कुटुंबाचे जीवन अधिक सोयीचे आणि सुरक्षित बनेल.
+    - generic [ref=e86]:
+      - generic [ref=e87]:
+        - button "कनेक्टिव्हिटी" [ref=e89] [cursor=pointer]:
+          - generic [ref=e91]: कनेक्टिव्हिटी
+          - img [ref=e92]
+        - button "आरोग्य आणि वैद्यकीय सेवा-सुविधा" [ref=e95] [cursor=pointer]:
+          - generic [ref=e97]: आरोग्य आणि वैद्यकीय सेवा-सुविधा
+          - img [ref=e98]
+        - button "शिक्षण" [ref=e101] [cursor=pointer]:
+          - generic [ref=e103]: शिक्षण
+          - img [ref=e104]
+        - button "मनोरंजन आणि जीवनशैली" [ref=e107] [cursor=pointer]:
+          - generic [ref=e109]: मनोरंजन आणि जीवनशैली
+          - img [ref=e110]
+      - img "Taloja location map" [ref=e113]
+  - generic [ref=e114]:
+    - heading "प्रकल्प तपशील" [level=2] [ref=e115]
+    - generic [ref=e116]:
+      - button "मागील" [ref=e117] [cursor=pointer]: ‹
+      - article [ref=e119]:
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - heading "रायगड इस्टेट फेज - I" [level=3] [ref=e122]
+            - paragraph [ref=e123]: सेक्टर २८, तळोजा
+            - paragraph [ref=e124]: "PMAY महारेरा नोंदणी क्रमांक : P52000028287"
+            - generic [ref=e125]:
+              - generic [ref=e126]: "घराचा प्रकार: १ बीएचके"
+              - img "MahaRERA QR P52000028287" [ref=e127]
+            - paragraph [ref=e128]: "पूर्णतेची तारीख : OC प्राप्त"
+            - link "Get Direction" [ref=e129] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Taloja+Sector+28+Navi+Mumbai
+          - generic [ref=e130]:
+            - img "रायगड इस्टेट फेज - I" [ref=e131]
+            - generic [ref=e132]:
+              - generic [ref=e133]: किंमत ₹२२.६*
+              - generic [ref=e134]: (लाखांपासून सुरू)
+          - generic [ref=e135]:
+            - paragraph [ref=e136]: "रेरा कार्पेट एरिया: २६.८६ ते २७.०९ चौ. मी."
+            - paragraph [ref=e137]: "कार्पेट एरिया: ३२२ चौ. फूट"
+      - button "पुढील" [ref=e138] [cursor=pointer]: ›
+    - paragraph [ref=e139]: "* ६ व्या मजल्यापासून आणि त्यावरील मजल्यांसाठी प्रति मजला, प्रति चौ. फूट ₹ १०/- प्रमाणे फ्लोअर किंमत लागू राहील"
+  - generic [ref=e141]:
+    - heading "प्रकल्प सुविधा" [level=2] [ref=e142]
+    - generic [ref=e143]:
+      - generic [ref=e144]:
+        - generic [ref=e147]: शॉपिंग प्लाझा
+        - generic [ref=e150]: लॉन
+        - generic [ref=e153]: वॉकिंग ट्रॅक
+        - generic [ref=e156]: गेझिबो सिटिंग
+        - generic [ref=e159]: बैठकीची जागा
+      - generic [ref=e160]:
+        - generic [ref=e163]: लहान मुलांचे क्रीडाक्षेत्र
+        - generic [ref=e166]: अ‍ॅम्फिथिएटर
+        - generic [ref=e169]: सामुदायिक केंद्र
+        - generic [ref=e172]: हाफ कोर्ट
+    - paragraph [ref=e173]: "* या सामान्य सुविधा आहेत आणि प्रत्येक प्रकल्पानुसार बदलू शकतात."
+  - generic [ref=e175]:
+    - heading "आमचे कंस्ट्रक्शन कॉन्ट्रॅक्टर्स" [level=2] [ref=e176]
+    - generic [ref=e177]:
+      - img "L&T Realty" [ref=e179]
+      - img "B.G. Shirke" [ref=e181]
+  - contentinfo [ref=e182]:
+    - generic [ref=e183]:
+      - navigation "Footer navigation" [ref=e185]:
+        - link "सिडको इस्टेट ›" [ref=e186] [cursor=pointer]:
+          - /url: "#about"
+        - link "तळोजाच का? ›" [ref=e187] [cursor=pointer]:
+          - /url: "#why"
+        - link "कनेक्टिव्हिटी ›" [ref=e188] [cursor=pointer]:
+          - /url: "#connectivity"
+        - link "प्रकल्प तपशील ›" [ref=e189] [cursor=pointer]:
+          - /url: "#projects"
+        - link "आमचे भागीदार ›" [ref=e190] [cursor=pointer]:
+          - /url: "#partners"
+      - generic [ref=e191]:
+        - generic [ref=e192]:
+          - img "CIDCO Estate" [ref=e194]
+          - generic "तरक्की का नाम तळोजा (खारघर पूर्व)" [ref=e195]:
+            - generic [ref=e196]: तरक्की का नाम तळोजा
+            - generic [ref=e197]: (खारघर पूर्व)
+        - generic [ref=e198]:
+          - generic [ref=e199]: "फॉलो करा:"
+          - link "Facebook" [ref=e200] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e201]
+          - link "Twitter" [ref=e203] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e204]
+          - link "Instagram" [ref=e206] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e207]
+          - link "YouTube" [ref=e210] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e211]
+        - generic [ref=e215]:
+          - generic [ref=e216]: "हेल्पलाईन क्रमांक:"
+          - generic [ref=e217]:
+            - link "+९१ ९९३०८ ७००००" [ref=e218] [cursor=pointer]:
+              - /url: tel:+919930870000
+            - link "+९१ ८०६२३ ६८०००" [ref=e219] [cursor=pointer]:
+              - /url: tel:+918062368000
+    - paragraph [ref=e221]: "अस्वीकरण : या संकेतस्थळावर केलेल्या दर्शविण्यात आलेल्या सोयी सुविधा, तपशील, पायाभूत सुविधा, छायाचित्रे प्रतिनिधिक आहेत. प्रकल्पाच्या ठिकाणाची, तेथील घरांची/सदनिकांची कल्पना यावी, यासाठी त्यांचा उपयोग करण्यात आला आहे. त्यामुळे येथे नमूद केलेल्या गोष्टी आणि वास्तविक परिस्थिती यात बदल असू शकतो. आजूबाजूचा परिसर, अंतर्गत रचना, रंगसंगती, इत्यादी गोष्टींचा केवळ संदर्भ म्हणून उपयोग करण्यात आला आहे प्रत्यक्षात त्या वेगळ्या असू शकतात किंवा त्यात बदलही झालेला असू शकतो."
+  - generic [ref=e222]:
+    - button "चौकशी करा" [ref=e223] [cursor=pointer]:
+      - img [ref=e224]
+      - generic [ref=e226]: चौकशी करा
+    - link "Call us" [ref=e227] [cursor=pointer]:
+      - /url: tel:+919930870000
+      - img [ref=e228]

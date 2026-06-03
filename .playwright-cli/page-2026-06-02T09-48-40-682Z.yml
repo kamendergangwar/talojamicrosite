@@ -1,0 +1,153 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "CIDCO Estate home" [ref=e3] [cursor=pointer]:
+      - /url: "#top"
+      - img "CIDCO Estate" [ref=e4]
+    - navigation [ref=e5]:
+      - link "About" [ref=e6] [cursor=pointer]:
+        - /url: "#about"
+      - link "Why Taloja" [ref=e7] [cursor=pointer]:
+        - /url: "#why"
+      - link "Projects" [ref=e8] [cursor=pointer]:
+        - /url: "#projects"
+      - link "Connectivity" [ref=e9] [cursor=pointer]:
+        - /url: "#connectivity"
+      - button "Enquire Now" [ref=e10] [cursor=pointer]
+  - main [ref=e11]:
+    - region "CIDCO Estate highlights" [ref=e12]:
+      - generic [ref=e13]:
+        - article [ref=e14]:
+          - img "Woman travelling by train" [ref=e15]
+        - article [ref=e16]:
+          - img "CIDCO Estate lifestyle highlight" [ref=e17]
+        - article [ref=e18]:
+          - img "Family lifestyle highlight" [ref=e19]
+        - article [ref=e20]:
+          - img "CIDCO Estate infrastructure highlight" [ref=e21]
+        - article [ref=e22]:
+          - img "CIDCO Estate affordability highlight" [ref=e23]
+      - generic [ref=e24]:
+        - img "CIDCO Estate - तरक्की का नाम तळोजा" [ref=e25]
+        - paragraph [ref=e26]: खारघर (पूर्व), तळोजा
+        - heading "तुमचं हक्काचं घर, नियोजित टाऊनशिपमध्ये" [level=1] [ref=e27]
+        - paragraph [ref=e28]: कमी किमतीत आधुनिक सोयी-सुविधांसह आरामदायी १ आणि २ बीएचके घरांचे स्वप्न आता सत्यात उतरू लागले आहे.
+        - generic [ref=e29]:
+          - button "Enquire Now" [ref=e30] [cursor=pointer]
+          - link "View Projects" [ref=e31] [cursor=pointer]:
+            - /url: "#projects"
+      - generic "Slider controls" [ref=e32]:
+        - button "Previous slide" [ref=e33] [cursor=pointer]: ‹
+        - generic [ref=e34]:
+          - button "Show slide 1" [ref=e35] [cursor=pointer]
+          - button "Show slide 2" [ref=e36] [cursor=pointer]
+          - button "Show slide 3" [ref=e37] [cursor=pointer]
+          - button "Show slide 4" [ref=e38] [cursor=pointer]
+          - button "Show slide 5" [ref=e39] [cursor=pointer]
+        - button "Next slide" [ref=e40] [cursor=pointer]: ›
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - paragraph [ref=e43]: सिडको इस्टेट
+        - heading "तरक्की का नाम तळोजा" [level=2] [ref=e44]
+        - paragraph [ref=e45]: सिडको इस्टेट म्हणजे केवळ इमारतींचा समूह नाही, तर अत्याधुनिक पद्धतीने विकसित केलेली एक भव्य, नियोजित आणि स्वयंपूर्ण टाऊनशिप आहे.
+        - paragraph [ref=e46]: उत्तम कनेक्टिव्हिटी, रुंद रस्ते, आधुनिक सुविधा, मोकळ्या जागा आणि परवडणाऱ्या सुंदर घरांसह खारघर (पूर्व), तळोजा आजच्या स्मार्ट पिढीची पहिली पसंती बनत आहे.
+      - generic [ref=e47]:
+        - img "CIDCO township building" [ref=e48]
+        - generic [ref=e49]:
+          - generic [ref=e50]: Budget Friendly
+          - strong [ref=e51]: ₹२२.६ लाखांपासून
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - paragraph [ref=e55]: खारघर (पूर्व), तळोजा का?
+        - heading "भविष्यातील मोठ्या पायाभूत सुविधांच्या केंद्रस्थानी" [level=2] [ref=e56]
+        - paragraph [ref=e57]: मेट्रो, रेल्वे, हायवेचे जाळे आणि नवी मुंबई आंतरराष्ट्रीय विमानतळाच्या थेट व जलद अ‍ॅक्सेसमुळे प्रवासाची उत्तम सोय.
+      - generic [ref=e58]:
+        - article [ref=e59]:
+          - text: "01"
+          - heading "निसर्ग" [level=3] [ref=e60]
+          - paragraph [ref=e61]: निसर्गरम्य आणि शांत परिसराच्या सान्निध्यात प्रसन्न वातावरणाचा अनुभव.
+        - article [ref=e62]:
+          - text: "02"
+          - heading "दैनंदिन सुविधा" [level=3] [ref=e63]
+          - paragraph [ref=e64]: सुपरमार्केट, बाजारपेठा, हॉस्पिटल, शाळा आणि कॉलेज सर्व काही जवळ.
+        - article [ref=e65]:
+          - text: "03"
+          - heading "गुंतवणूक" [level=3] [ref=e66]
+          - paragraph [ref=e67]: जेएनपीटी आणि आगामी इंटरनॅशनल कॉर्पोरेट पार्कसारख्या केंद्रांच्या जवळ.
+        - article [ref=e68]:
+          - text: "04"
+          - heading "दर्जेदार बांधकाम" [level=3] [ref=e69]
+          - paragraph [ref=e70]: एल अँड टी आणि बी. जी. शिर्के यांचे गुणवत्तेवर आधारलेले बांधकाम.
+    - generic [ref=e71]:
+      - generic [ref=e72]:
+        - paragraph [ref=e73]: CIDCO Estate Projects
+        - heading "Available Housing Projects" [level=2] [ref=e74]
+      - generic [ref=e75]:
+        - article [ref=e76]:
+          - img "Taloja Sector 37 project" [ref=e77]
+          - generic [ref=e78]:
+            - heading "Taloja Sector 37" [level=3] [ref=e79]
+            - paragraph [ref=e80]: "RERA: P52000028240"
+            - button "Request Details" [ref=e81] [cursor=pointer]
+        - article [ref=e82]:
+          - img "Taloja Sector 28 project" [ref=e83]
+          - generic [ref=e84]:
+            - heading "Taloja Sector 28" [level=3] [ref=e85]
+            - paragraph [ref=e86]: "RERA: P52000028287"
+            - button "Request Details" [ref=e87] [cursor=pointer]
+        - article [ref=e88]:
+          - img "Taloja Sector 39 project" [ref=e89]
+          - generic [ref=e90]:
+            - heading "Taloja Sector 39" [level=3] [ref=e91]
+            - paragraph [ref=e92]: "RERA: P52000045446"
+            - button "Request Details" [ref=e93] [cursor=pointer]
+        - article [ref=e94]:
+          - img "Raigad Phase 1 project" [ref=e95]
+          - generic [ref=e96]:
+            - heading "Raigad Phase 1" [level=3] [ref=e97]
+            - paragraph [ref=e98]: Comfortable 1 & 2 BHK homes
+            - button "Request Details" [ref=e99] [cursor=pointer]
+        - article [ref=e100]:
+          - img "Vijaydurgh Vista project" [ref=e101]
+          - generic [ref=e102]:
+            - heading "Vijaydurgh Vista" [level=3] [ref=e103]
+            - paragraph [ref=e104]: Planned township living
+            - button "Request Details" [ref=e105] [cursor=pointer]
+        - article [ref=e106]:
+          - img "Raigad Residency project" [ref=e107]
+          - generic [ref=e108]:
+            - heading "Raigad Residency" [level=3] [ref=e109]
+            - paragraph [ref=e110]: Modern amenities in Taloja
+            - button "Request Details" [ref=e111] [cursor=pointer]
+    - generic [ref=e112]:
+      - img "Metro connectivity" [ref=e114]
+      - generic [ref=e115]:
+        - paragraph [ref=e116]: Connectivity
+        - heading "मेट्रो, रेल्वे, हायवे आणि विमानतळाजवळ" [level=2] [ref=e117]
+        - tablist "Connectivity options" [ref=e118]:
+          - button "Metro" [ref=e119] [cursor=pointer]
+          - button "Airport" [ref=e120] [cursor=pointer]
+          - button "Roads" [ref=e121] [cursor=pointer]
+        - list [ref=e122]:
+          - listitem [ref=e123]: "मेट्रो लाईन १: बेलापूर ते पेणधर दरम्यान थेट प्रवास."
+          - listitem [ref=e124]: "मेट्रो लाईन २: तळोजा एमआयडीसी ते खांदेश्वर आगामी कॉरिडॉर."
+          - listitem [ref=e125]: "मेट्रो लाईन १२: कल्याण-डोंबिवली ते तळोजा आगामी मार्गिका."
+    - generic [ref=e126]:
+      - generic [ref=e127]:
+        - paragraph [ref=e128]: Nearby Essentials
+        - heading "आरोग्य, शिक्षण आणि जीवनशैली" [level=2] [ref=e129]
+      - generic [ref=e130]:
+        - generic [ref=e131]:
+          - heading "आरोग्य" [level=3] [ref=e132]
+          - paragraph [ref=e133]: तळोजा मल्टीस्पेशालिटी हॉस्पिटल, जीवनदीप हॉस्पिटल, ॲपेक्स मल्टीस्पेशालिटी हॉस्पिटल, टाटा मेमोरियल हॉस्पिटल.
+        - generic [ref=e134]:
+          - heading "शिक्षण" [level=3] [ref=e135]
+          - paragraph [ref=e136]: बजाज इंटरनॅशनल स्कूल, एनएमआयएमएस नवी मुंबई, रॅडक्लिफ स्कूल, नॅशनल इन्स्टिट्यूट ऑफ फॅशन टेक्नॉलॉजी.
+        - generic [ref=e137]:
+          - heading "जीवनशैली" [level=3] [ref=e138]
+          - paragraph [ref=e139]: पीव्हीआर ओरियन मॉल, लिटिल वर्ल्ड मॉल, डी-मार्ट कळंबोली आणि रिलायन्स स्मार्ट.
+    - generic [ref=e140]:
+      - img "Happy resident with scooter" [ref=e141]
+      - generic [ref=e142]:
+        - paragraph [ref=e143]: Limited Opportunity
+        - heading "तुमच्या स्वप्नातील घरासाठी आजच चौकशी करा" [level=2] [ref=e144]
+        - button "Book Enquiry" [ref=e145] [cursor=pointer]

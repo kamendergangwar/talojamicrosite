@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="mr" id="html-root">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CIDCO Estate - तरक्की का नाम तळोजा</title>
+    <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <div class="header-capsule">
+          <a class="brand-homes" href="#top" aria-label="CIDCO Homes">
+            <img src="Assets/Logo/cidco-homes-logo-cropped.png" alt="CIDCO Homes - शहरांचे शिल्पकार" />
+          </a>
+
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" id="menu-toggle">
+            <span></span><span></span><span></span>
+          </button>
+
+          <nav class="site-nav" id="site-nav">
+            <a href="#about" class="active" data-en="CIDCO Estate">सिडको इस्टेट</a>
+            <a href="#why" data-en="Why Taloja?">तळोजाच का?</a>
+            <a href="#connectivity" data-en="Connectivity">कनेक्टिव्हिटी</a>
+            <a href="#projects" data-en="Project Details">प्रकल्प तपशील</a>
+            <a href="#partners" data-en="Our Partners">आमचे भागीदार</a>
+            <div class="lang-toggle-mobile">
+              <button class="lang-btn lang-eng" type="button" id="btn-eng-mob">ENG</button>
+              <button class="lang-btn lang-active lang-mr" type="button" id="btn-mr-mob">मराठी</button>
+            </div>
+          </nav>
+
+          <a class="brand-estate" href="#top" aria-label="CIDCO Estate">
+            <img src="Assets/Logo/cidco-estate-logo-cropped.png" alt="CIDCO Estate - तरक्की का नाम तळोजा" />
+          </a>
+        </div>
+
+        <div class="lang-toggle">
+          <button class="lang-btn" type="button" id="btn-eng">ENG</button>
+          <button class="lang-btn lang-active" type="button" id="btn-mr">मराठी</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== HERO SLIDER ===== -->
+    <section class="hero" id="top" aria-label="CIDCO Estate highlights">
+      <div class="hero-track" id="hero-track">
+
+        <div class="hero-slide is-active">
+          <video
+            src="Assets/Video/CIDCO_Estate_Marathi LOGO.mp4"
+            data-en-src="Assets/Video/CIDCO_Estate_LOGO Building3_English.mp4"
+            autoplay
+            muted
+            playsinline
+            preload="auto"
+            aria-label="CIDCO Estate Township"></video>
+          <div class="slide-overlay"></div>
+          <!-- <img class="hero-gradient-overlay" src="Assets/Video gradeint.png" alt="" aria-hidden="true" /> -->
+          <div class="slide-caption">
+            <p data-en="Where modern lifestyle and amenities<br>come together to build your dream home">जिथे आधुनिक जीवनशैली आणि सोयीसुविधांचा<br>मेळ घालून तुमचं स्वप्नांचं घर साकारलं जातं</p>
+          </div>
+          <span class="archive-note" data-en="Archived & artistic images">संग्रहीत व कलात्मक प्रतिमा</span>
+        </div>
+
+        <div class="hero-slide">
+          <img src="Assets/Slider Images/CIDCO Estate - Landing Page _ 2-6-26_Slider 01.jpg" alt="Metro Connectivity" loading="lazy" />
+          <div class="slide-overlay"></div>
+          <div class="slide-caption">
+            <p data-en="Seamless and rapid travel made easy with a robust network of metro lines, railways, major highways, and direct access to the NMIA.">मेट्रो, रेल्वे, हायवेचे जाळे आणि नवी मुंबई आंतरराष्ट्रीय विमानतळाच्या थेट व जलद अ‍ॅक्सेसमुळे प्रवासाची उत्तम सोय.</p>
+          </div>
+          <span class="archive-note" data-en="Archived & artistic images">संग्रहीत व कलात्मक प्रतिमा</span>
+        </div>
+
+        <div class="hero-slide">
+          <img src="Assets/Slider Images/CIDCO Estate - Landing Page _ 2-6-26_Slider 02.jpg" alt="Green Surroundings" loading="lazy" />
+          <div class="slide-overlay"></div>
+          <div class="slide-caption">
+            <p data-en="Experience a pleasant lifestyle nestled in the lap of a scenic, peaceful environment, right around your home.">प्रसन्न वातावरणाचा अनुभव आता तुम्हाला मिळेल निसर्गरम्य आणि शांत परिसराच्या सान्निध्यात, ते ही तुमच्या घराच्या सभोवताली.</p>
+          </div>
+          <span class="archive-note" data-en="Archived & artistic images">संग्रहीत व कलात्मक प्रतिमा</span>
+        </div>
+
+        <div class="hero-slide">
+          <img src="Assets/Slider Images/CIDCO Estate - Landing Page _ 2-6-26_Slider 03.jpg" alt="Planned Township" loading="lazy" />
+          <div class="slide-overlay"></div>
+          <div class="slide-caption">
+            <p data-en="A well-planned township where supermarkets, local markets, hospitals, schools, and colleges are all just nearby.">सुपरमार्केट, बाजारपेठा, हॉस्पिटल, शाळा आणि कॉलेज सर्व काही अगदी जवळ असलेली एक नियोजनबद्ध टाऊनशिप!</p>
+          </div>
+          <span class="archive-note" data-en="Archived & artistic images">संग्रहीत व कलात्मक प्रतिमा</span>
+        </div>
+
+        <div class="hero-slide">
+          <img src="Assets/Slider Images/CIDCO Estate - Landing Page _ 2-6-26_Slider 04.jpg" alt="Quality Construction" loading="lazy" />
+          <div class="slide-overlay"></div>
+          <div class="slide-caption">
+            <p data-en="Quality construction by industry giants L&T and B.G. Shirke, delivering a rock-solid foundation of trust and excellence.">एल अँड टी आणि बी. जी. शिर्के यांचे दर्जेदार बांधकाम, जे देतात गुणवत्तेचा भक्कम विश्वास!</p>
+          </div>
+          <span class="archive-note" data-en="Archived & artistic images">संग्रहीत व कलात्मक प्रतिमा</span>
+        </div>
+
+        <div class="hero-slide">
+          <img src="Assets/Slider Images/CIDCO Estate - Landing Page _ 2-6-26_Slider 05.jpg" alt="Business Hub" loading="lazy" />
+          <div class="slide-overlay"></div>
+          <div class="slide-caption">
+            <p data-en="Comfortable, modern homes equipped with state-of-the-art amenities, starting from just ₹22.6 Lakhs*.">२२.६* लाखांपासून आरामदायी घरे ती सुद्धा अत्याधुनिक सोयी-सुविधांसह.</p>
+          </div>
+          <span class="archive-note" data-en="Archived & artistic images">संग्रहीत व कलात्मक प्रतिमा</span>
+        </div>
+
+      </div>
+
+      <!-- Arrows -->
+      <button class="hero-arrow hero-arrow--prev" id="hero-prev" aria-label="मागील" data-en-aria="Previous">&#8249;</button>
+      <button class="hero-arrow hero-arrow--next" id="hero-next" aria-label="पुढील" data-en-aria="Next">&#8250;</button>
+
+      <!-- Dots -->
+      <div class="hero-dots" id="hero-dots" role="tablist" aria-label="Slide navigation"></div>
+
+      <!-- Scroll down indicator -->
+      <div class="scroll-down" aria-hidden="true">
+        <svg viewBox="0 0 44 44" width="44" height="44" fill="none">
+          <circle cx="22" cy="22" r="21" stroke="white" stroke-width="1.5"/>
+          <polyline points="14,17 22,26 30,17" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <polyline points="14,23 22,32 30,23" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about-section" id="about">
+      <div class="about-inner">
+        <div class="about-text">
+          <h2 class="section-title section-title--underlined" data-en="CIDCO Estate - <span class='title-highlight'>Tarakki Ka Naam Taloja</span>">सिडको इस्टेट - <span class="title-highlight">तरक्की का नाम तळोजा</span></h2>
+          <p data-en="To turn your dream of owning a home into reality, CIDCO brings you 'CIDCO Estate - an experience of a whole new world', right here in Navi Mumbai at Kharghar (East), Taloja! Here, you don’t just get a home made of four walls; alongside your very first dream home, you will experience a world-class, modern lifestyle. Future-ready infrastructure will make your family’s daily life more convenient, secure, and joyful.">तुमचं हक्काच्या घराचं स्वप्न आता सत्यात उतरवण्यासाठी सिडको घेऊन आले आहे - सिडको इस्टेट - एका नव्या जगाची अनुभूती... तीही आपल्या नवी मुंबईत - खारघर (पूर्व), तळोजामध्ये! इथे तुम्हाला केवळ चार भिंतींचं घरच मिळणार नाही, तर तुमच्या पहिल्या हक्काच्या घरासोबत आधुनिक जीवनशैलीचा एक जागतिक दर्जाचा अनुभव तुम्हाला इथे घेता येईल. उद्याच्या प्रगत पायाभूत सुविधा, ज्या तुमच्या कुटुंबाचे दैनंदिन जीवनमान अधिक सोयीचे, सुरक्षित आणि आनंदी बनवतील.</p>
+          <p data-en="A blissful journey that gives wings to your dreams and guarantees a bright future—CIDCO Estate – Tarakki Ka Naam Taloja! CIDCO Estate is not just a cluster of buildings but a grand, planned, and self-sufficient township developed with state-of-the-art design. Beyond infrastructure, CIDCO has made life more comfortable for residents by creating residential communities in Kharghar (East), Taloja. The dream of owning comfortable 1 & 2 BHK homes with modern amenities at highly affordable prices is now becoming a reality. With excellent connectivity, wide and spacious roads, modern amenities, open scenic spaces, and beautiful yet budget-friendly homes—CIDCO Estate, Kharghar (East), Taloja is becoming the first choice for today’s smart generation.">तुमच्या स्वप्नांना पंख देणारा आणि उज्ज्वल भविष्याची हमी देणारा एक सुखद प्रवास म्हणजे – सिडको इस्टेट – तरक्की का नाम तळोजा! सिडको इस्टेट म्हणजे केवळ इमारतींचा समूह नाही, तर अत्याधुनिक पद्धतीने विकसित केलेली एक भव्य, नियोजित आणि स्वयंपूर्ण टाऊनशिप आहे. केवळ पायाभूत सुविधाच नव्हे तर सिडकोने - सिडको इस्टेट - खारघर (पूर्व), तळोजामध्ये गृहसंकुले निर्माण करून सामान्यांचे जीवन अधिक सुखकर बनवले आहे. अगदी कमी किमतीत आधुनिक सोयी-सुविधांसह आरामदायी १ आणि २ बीएचके घरांचे स्वप्न आता सत्यात उतरू लागले आहे. उत्तम कनेक्टिव्हिटी, रुंद आणि प्रशस्त रस्ते, आधुनिक सुविधा, मोकळ्या आणि निसर्गरम्य जागा आणि परवडणाऱ्या अतिशय सुंदर घरांसह, - सिडको इस्टेट - खारघर (पूर्व), तळोजा आजच्या स्मार्ट पिढीची पहिली पसंती बनत आहे.</p>
+          <p data-en="&quot;CIDCO Estate – Tarakki Ka Naam Taloja&quot; is not just a campaign but the beginning of a better life for your family. This rapidly developing locale, which guarantees a modern lifestyle at an affordable price, a secure environment, and a bright future, is the perfect choice for your dream home.">सिडको इस्टेट - तरक्की का नाम तळोजा” ही केवळ एक मोहिम नाही, तर आपल्या कुटुंबासाठी अधिक चांगल्या जीवनाची सुरुवात आहे. कमी किमतीत आधुनिक जीवनशैली, सुरक्षित परिसर आणि उज्ज्वल भविष्याची खात्री देणारा हा वेगाने विकसित होत असलेला परिसर, तुमच्या स्वप्नातील घरासाठी एक आदर्श पर्याय आहे.</p>
+        </div>
+        <div class="about-image">
+          <img src="Assets/Page Images/Cidco-01.jpg" alt="CIDCO Estate buildings" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY TALOJA ===== -->
+    <section class="why-section" id="why">
+      <div class="why-top">
+        <div class="why-collage">
+          <div class="collage-item collage-airport">
+            <img src="Assets/Page Images/NMIA-Airport.jpg" alt="Navi Mumbai International Airport" />
+          </div>
+          <div class="collage-item collage-scooter">
+            <img src="Assets/Page Images/SM1067682-New-scooty.jpg" alt="Independent Lifestyle" />
+          </div>
+          <div class="collage-item collage-metro">
+            <img src="Assets/Page Images/metro-station-crop.jpg" alt="Metro Connectivity" />
+          </div>
+          <div class="collage-item collage-train">
+            <img src="Assets/Page Images/local-train-crop.jpg" alt="Local Train" />
+          </div>
+          <div class="collage-item collage-estate">
+            <img src="Assets/Page Images/Cidco-01.jpg" alt="CIDCO Estate" />
+          </div>
+        </div>
+        <div class="why-text">
+          <h2 class="section-title section-title--underlined" data-en="Why Taloja?">तळोजाच का?</h2>
+          <p data-en="Kharghar (East), Taloja is no longer just a residential area - it is transforming into a symbol of new progress and modern living. Thanks to CIDCO’s vision, Kharghar (East), Taloja now offers well-planned development, excellent connectivity, and massive future-ready infrastructure to the common man. This makes Kharghar (East), Taloja the fastest-growing destination in Navi Mumbai.">खारघर (पूर्व), तळोजा हे आज केवळ एक निवासी ठिकाण नसून, नव्या प्रगतीचे आणि आधुनिक जीवनशैलीचे प्रतीक बनत आहे. सिडकोच्या सोबतीमुळे आज खारघर (पूर्व), तळोजामध्ये नियोजित विकास, उत्कृष्ट कनेक्टिव्हिटी आणि भविष्यातील मोठ्या आणि उत्तम पायाभूत सुविधा जनसामान्यांना मिळू लागल्या आहेत. त्यामुळे खारघर (पूर्व), तळोजा हे नवी मुंबईतील सर्वात वेगाने विकसित होणारे ठिकाण ठरत आहे.</p>
+          <p data-en="Kharghar (East), Taloja stands proudly at the very center of Navi Mumbai’s modern transformation. Alongside rail connectivity via the Taloja Panchnand Railway Station, the area already enjoys operational metro services to Kharghar and CBD Belapur. Looking ahead, the upcoming metro corridors towards Khandeshwar (with a proposed extension to the Navi Mumbai International Airport) and the Kalyan–Taloja line will further reinforce its regional connectivity. Its road network is equally robust; the Kharghar–Taloja Flyover bridges the distance to Kharghar’s premium lifestyle, entertainment, and educational hubs, while the location also enjoys direct access to National Highway 4 (NH 4). With game-changing future projects like the Kharghar Coastal Road, Kharghar–Turbhe Link Road, and the Virar–Alibaug Multimodal Corridor, combined with its proximity to the NMIA, this is undeniably one of the most strategically positioned locations in the entire Mumbai Metropolitan Region (MMR). These advanced infrastructural developments ensure that your family’s daily life here will be exceptionally convenient, secure, and comfortable.">नवी मुंबईच्या होणाऱ्या आधुनिक परिवर्तनाच्या केंद्रस्थानी आज 'खारघर (पूर्व), तळोजा' अत्यंत दिमाखात उभे आहे. तळोजा पांचनंद रेल्वे स्टेशनसह खारघर व सीबीडी बेलापूरसाठी येथे मेट्रो सुरु आहे. आगामी काळात खांदेश्वर (नवी मुंबई विमानतळापर्यंत प्रस्तावित विस्तार) आणि कल्याण-तळोजा मेट्रो मार्गिकांमुळे येथील कनेक्टिव्हिटी आणखी मजबूत होईल. रस्त्यांच्या बाबतीत, खारघर-तळोजा उड्डाणपुलामुळे खारघरमधील जीवनशैली व शिक्षण संस्था जवळ आल्या आहेत; तर राष्ट्रीय महामार्ग ४ (NH 4) ने जोडले गेले आहेत. भविष्यातील खारघर कोस्टल रोड, खारघर-तुर्भे लिंक रोड आणि विरार-अलिबाग मल्टिमोडल कॉरिडॉर, तसेच आंतरराष्ट्रीय विमानतळाचे सानिध्य यामुळे एमएमआर क्षेत्रातील हे सर्वात धोरणात्मक ठिकाण ठरत आहे. याच प्रगत पायाभूत सुविधांमुळे तुमच्या कुटुंबाचे जीवन अधिक सोयीचे आणि सुरक्षित बनेल.</p>
+        </div>
+      </div>
+
+      <!-- Accordion + Map -->
+      <div class="why-bottom" id="connectivity">
+        <div class="accordion-block">
+          <div class="acc-item">
+            <button class="acc-trigger" type="button" aria-expanded="false">
+              <span class="acc-icon-wrap">
+                <img src="Assets/Icons/CIDCO Estate - Landing Page _ 2-6-26.png" alt="" />
+              </span>
+              <span data-en="Connectivity">कनेक्टिव्हिटी</span>
+              <svg class="acc-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="acc-body" hidden>
+              <ul>
+                <li data-en="Metro Line 1: Seamless and direct travel between Belapur and Pendhar.">मेट्रो लाईन १: बेलापूर ते पेणधर दरम्यान थेट आणि सुलभ प्रवास.</li>
+                <li data-en="Metro Line 2: An upcoming corridor connecting Taloja MIDC to Khandeshwar via Kamothe and Kalamboli.">मेट्रो लाईन २: तळोजा एमआयडीसीला कामोठे आणि कळंबोलीमार्गे खांदेश्वरशी जोडणारा एक आगामी कॉरिडॉर.</li>
+                <li data-en="Airport Metro Extension: Planned extension providing direct metro connectivity to the NMIA.">विमानतळ मेट्रो विस्तार: नवी मुंबई आंतरराष्ट्रीय विमानतळाशी (NMIA) थेट मेट्रो संपर्क.</li>
+                <li data-en="Metro Line 12: An upcoming metro line connecting Kalyan-Dombivli to Taloja.">मेट्रो लाईन १२: कल्याण-डोंबिवली ते तळोजा जोडणारी आगामी मार्गिका.</li>
+                <li data-en="Panchnand Railway Station: A crucial junction connecting you to the Central Line network.">पांचनंद रेल्वे स्टेशन: मध्य लाईनला जोडणारे महत्त्वाचे जंक्शन.</li>
+                <li data-en="Kharghar–Taloja Flyover: A strategic flyover that reduces the travel time between both suburbs to just a few minutes.">खारघर-तळोजा उड्डाणपूल: दोन्ही उपनगरांमधील अंतर अवघ्या काही मिनिटांवर आणणारा पूल.</li>
+                <li data-en="Kharghar Coastal Road: A scenic roadway connecting the area to the NMIA, and Nerul, Belapur.">खारघर कोस्टल रोड: नवी मुंबई आंतरराष्ट्रीय विमानतळ आणि नेरुळ, बेलापूरला जोडणारा रस्ता.</li>
+                <li data-en="Kharghar–Turbhe Link Road (KTLR): Direct connectivity to Mumbai and Thane, completely bypassing the heavy Traffic on the Sion–Panvel Highway.">खारघर-तुर्भे लिंक रोड (KTLR): सायन-पनवेल हायवेवरील ट्रॅफिक टाळून मुंबई-ठाण्याकडे थेट प्रवास.</li>
+                <li data-en="Panvel–Mumbra Highway (NH 4): Direct highway access connecting to JNPT, Thane, Mumbai–Pune Expressway, Kalyan, and Shilphata.">पनवेल-मुंब्रा हायवे (NH 4): जेएनपीटी (JNPT), ठाणे, मुंबई-पुणे एक्सप्रेसवे, कल्याण आणि शिळफाट्यासाठी थेट हायवे अ‍ॅक्सेस.</li>
+                <li data-en="Virar–Alibaug Corridor: A mega-project designed to cut travel time between Palghar and Raigad in half.">विरार-अलिबाग कॉरिडॉर: पालघर ते रायगड प्रवास अर्ध्यावर आणणारा मेगा-प्रकल्प.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-trigger" type="button" aria-expanded="false">
+              <span class="acc-icon-wrap">
+                <img src="Assets/Icons/CIDCO Estate - Landing Page _ 2-6-26-30.png" alt="" />
+              </span>
+              <span data-en="Health & Medical Facilities">आरोग्य आणि वैद्यकीय सेवा-सुविधा</span>
+              <svg class="acc-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="acc-body" hidden>
+              <ul>
+                <li data-en="Taloja Multispeciality Hospital">तळोजा मल्टीस्पेशालिटी हॉस्पिटल</li>
+                <li data-en="Jeevandeep Hospital">जीवनदीप हॉस्पिटल</li>
+                <li data-en="Apex Multispeciality Hospital">ॲपेक्स मल्टीस्पेशालिटी हॉस्पिटल</li>
+                <li data-en="Tata Memorial Hospital">टाटा मेमोरियल हॉस्पिटल</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-trigger" type="button" aria-expanded="false">
+              <span class="acc-icon-wrap">
+                <img src="Assets/Icons/CIDCO Estate - Landing Page _ 2-6-26-31.png" alt="" />
+              </span>
+              <span data-en="Education">शिक्षण</span>
+              <svg class="acc-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="acc-body" hidden>
+              <ul>
+                <li data-en="Bajaj International School">बजाज इंटरनॅशनल स्कूल</li>
+                <li data-en="NMIMS - Navi Mumbai">एनएमआयएमएस - नवी मुंबई</li>
+                <li data-en="Radcliffe School, Kharghar">रॅडक्लिफ स्कूल, खारघर</li>
+                <li data-en="National Institute of Fashion Technology (NIFT)">नॅशनल इन्स्टिट्यूट ऑफ फॅशन टेक्नॉलॉजी</li>
+                <li data-en="The Elite Public School">द एलिट पब्लिक स्कूल</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-trigger" type="button" aria-expanded="false">
+              <span class="acc-icon-wrap">
+                <img src="Assets/Icons/CIDCO Estate - Landing Page _ 2-6-26-32.png" alt="" />
+              </span>
+              <span data-en="Entertainment & Lifestyle">मनोरंजन आणि जीवनशैली</span>
+              <svg class="acc-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="acc-body" hidden>
+              <ul>
+                <li data-en="PVR Orion Mall">पीव्हीआर ओरियन मॉल</li>
+                <li data-en="Little World Mall">लिटिल वर्ल्ड मॉल</li>
+                <li data-en="D-Mart, Kalamboli">डी-मार्ट, कळंबोली</li>
+                <li data-en="Reliance Smart">रिलायन्स स्मार्ट</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="why-map">
+          <img src="Assets/Page Images/taloja-map-reference.png" alt="Taloja location map" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects-section" id="projects">
+      <h2 class="section-title section-title--light" data-en="Project Details">प्रकल्प तपशील</h2>
+
+      <div class="proj-carousel-wrap">
+        <button class="proj-arrow proj-arrow--prev" id="proj-prev" aria-label="मागील" data-en-aria="Previous">&#8249;</button>
+
+        <div class="proj-carousel" id="proj-carousel">
+
+          <article class="proj-card">
+            <div class="proj-card-inner">
+              <div class="proj-card-head">
+                <h3 class="proj-name" data-en="Raigad Estate Phase- I">रायगड इस्टेट फेज - I</h3>
+                <p class="proj-location" data-en="Sector 28, Taloja">सेक्टर २८, तळोजा</p>
+                <p class="proj-rera-line" data-en="PMAY Maha RERA no. P52000028287">PMAY महारेरा नोंदणी क्रमांक : P52000028287</p>
+                <div class="proj-top-row">
+                  <span class="proj-type-bar" data-en="Unit type: 1 BHK">घराचा प्रकार: १ बीएचके</span>
+                  <img class="proj-qr" src="Assets/project Images/Taloja Sector-28  P52000028287.PNG" alt="MahaRERA QR P52000028287" loading="lazy" />
+                </div>
+                <p class="proj-completion" data-en="Completion date: OC received">पूर्णतेची तारीख : OC प्राप्त</p>
+                <a class="proj-direction-link" href="https://maps.google.com/?q=Taloja+Sector+28+Navi+Mumbai" target="_blank" rel="noopener" data-en="Get Direction">Get Direction</a>
+              </div>
+              <div class="proj-image-stage">
+                <img src="Assets/project Images/Raigad-phase-1.jpg" alt="रायगड इस्टेट फेज - I" loading="lazy" />
+                <div class="proj-price-ribbon"><span data-en="Price ₹22.6*">किंमत ₹२२.६*</span><small data-en="(in lakhs)">(लाखांपासून सुरू)</small></div>
+              </div>
+              <div class="proj-bottom-specs">
+                <p data-en="RERA carpet Area: 26.86 to 27.09 sq.mt.">रेरा कार्पेट एरिया: २६.८६ ते २७.०९ चौ. मी.</p>
+                <p data-en="Carpet area: 322 sq.ft.">कार्पेट एरिया: ३२२ चौ. फूट</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj-card">
+            <div class="proj-card-inner">
+              <div class="proj-card-head">
+                <h3 class="proj-name" data-en="Raigad Residency">रायगड रेसिडेन्सी</h3>
+                <p class="proj-location" data-en="Sector 39, Taloja">सेक्टर ३९, तळोजा</p>
+                <p class="proj-rera-line" data-en="PMAY Maha RERA no. P52000045446">PMAY महारेरा नोंदणी क्रमांक: P52000045446</p>
+                <div class="proj-top-row">
+                  <span class="proj-type-bar" data-en="Unit type: 1 BHK">घराचा प्रकार: १ बीएचके</span>
+                  <img class="proj-qr" src="Assets/project Images/Taloja Sector -39  P52000045446.PNG" alt="MahaRERA QR P52000045446" loading="lazy" />
+                </div>
+                <p class="proj-completion" data-en="Completion date: 31.12.2027">पूर्णतेची तारीख : ३१.१२.२०२७</p>
+                <a class="proj-direction-link" href="https://maps.google.com/?q=Taloja+Sector+39+Navi+Mumbai" target="_blank" rel="noopener" data-en="Get Direction">Get Direction</a>
+              </div>
+              <div class="proj-image-stage">
+                <img src="Assets/project Images/raigad-residency.jpg" alt="रायगड रेसिडेन्सी" loading="lazy" />
+                <div class="proj-price-ribbon"><span data-en="Price ₹23.5*">किंमत ₹२३.५*</span><small data-en="(in lakhs)">(लाखांपासून सुरू)</small></div>
+              </div>
+              <div class="proj-bottom-specs">
+                <p data-en="RERA carpet Area: 27.47 to 27.56 sq. mt.">रेरा कार्पेट एरिया: २७.४७ ते २७.५६ चौ. मीटर</p>
+                <p data-en="Carpet area: 322 sq.ft.">कार्पेट एरिया: ३२२ चौ. फूट</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj-card">
+            <div class="proj-card-inner">
+              <div class="proj-card-head">
+                <h3 class="proj-name" data-en="Vijaydurga Vista">विजयदुर्ग विस्टा</h3>
+                <p class="proj-location" data-en="Sector 37, Taloja">सेक्टर ३७, तळोजा</p>
+                <p class="proj-rera-line" data-en="Non-PMAY Maha RERA no. P52000028240">NON-PMAY महारेरा नोंदणी क्रमांक: P52000028240</p>
+                <div class="proj-unit-tabs" role="tablist" aria-label="Vijaydurga Vista unit type">
+                  <button class="proj-unit-tab is-active" type="button" data-unit-target="vista-1bhk" data-en="1 BHK">१ बीएचके</button>
+                  <button class="proj-unit-tab" type="button" data-unit-target="vista-2bhk" data-en="2 BHK">२ बीएचके</button>
+                  <img class="proj-qr" src="Assets/project Images/Taloja Sector-37 Taloja 52000028240.PNG" alt="MahaRERA QR P52000028240" loading="lazy" />
+                </div>
+                <p class="proj-completion" data-en="Completion date: OC received">पूर्णतेची तारीख : OC प्राप्त</p>
+                <a class="proj-direction-link" href="https://maps.google.com/?q=Taloja+Sector+37+Navi+Mumbai" target="_blank" rel="noopener" data-en="Get Direction">Get Direction</a>
+              </div>
+              <div class="proj-unit-panel is-active" data-unit-panel="vista-1bhk">
+                <div class="proj-image-stage">
+                  <img src="Assets/project Images/vijaydurgh-vista.jpg" alt="विजयदुर्ग विस्टा" loading="lazy" />
+                  <div class="proj-price-ribbon"><span data-en="Price ₹30.8*">किंमत ₹३०.८*</span><small data-en="(in lakhs)">(लाखांपासून सुरू)</small></div>
+                </div>
+                <div class="proj-bottom-specs">
+                  <p data-en="RERA carpet Area: 33.69 to 34.85 sq mt">रेरा कार्पेट एरिया: ३३.६९ ते ३४.८५ चौ. मीटर</p>
+                  <p data-en="Carpet area: 398 sq ft">कार्पेट एरिया: ३९८ चौ. फूट</p>
+                </div>
+              </div>
+              <div class="proj-unit-panel" data-unit-panel="vista-2bhk" hidden>
+                <div class="proj-image-stage">
+                  <img src="Assets/project Images/vijaydurgh-vista.jpg" alt="विजयदुर्ग विस्टा" loading="lazy" />
+                  <div class="proj-price-ribbon"><span data-en="Price ₹41.80*">किंमत ₹४१.८०*</span><small data-en="(in lakhs)">(लाखांपासून सुरू)</small></div>
+                </div>
+                <div class="proj-bottom-specs">
+                  <p data-en="RERA carpet Area: 46.211 to 48.565 sq mt">रेरा कार्पेट एरिया: ४६.२११ ते ४८.५६५ चौ. मीटर</p>
+                  <p data-en="Carpet area: 540 sq ft">कार्पेट एरिया: ५४० चौ. फूट</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj-card">
+            <div class="proj-card-inner">
+              <div class="proj-card-head">
+                <h3 class="proj-name" data-en="Raigad Estate Phase- II">रायगड इस्टेट फेज- II</h3>
+                <p class="proj-location" data-en="Sector 29, Taloja">तळोजा सेक्टर २९</p>
+                <p class="proj-rera-line" data-en="Non-PMAY Maha RERA no. P52000028219">NON-PMAY महारेरा नोंदणी क्र. P52000028219</p>
+                <div class="proj-top-row">
+                  <span class="proj-type-bar" data-en="Unit type: 1 and 2 BHK">घराचा प्रकार: १ आणि २ बीएचके</span>
+                  <img class="proj-qr" src="Assets/project Images/Taloja Sector -29 P52000028219.PNG" alt="MahaRERA QR P52000028219" loading="lazy" />
+                </div>
+                <p class="proj-completion" data-en="Completion date: OC received">पूर्णतेची तारीख : ओसी प्राप्त</p>
+                <a class="proj-direction-link" href="https://maps.google.com/?q=Taloja+Sector+29+Navi+Mumbai" target="_blank" rel="noopener" data-en="Get Direction">Get Direction</a>
+              </div>
+              <div class="proj-image-stage">
+                <img src="Assets/project Images/sector-29.jpg" alt="रायगड इस्टेट फेज- II" loading="lazy" />
+                <div class="proj-coming-soon" data-en="COMING SOON">लवकरच येत आहे</div>
+              </div>
+              <div class="proj-bottom-specs">
+                <p data-en="Unit type: 1 and 2 BHK">घराचा प्रकार: १ आणि २ बीएचके</p>
+                <p data-en="More details soon">अधिक तपशील लवकरच</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj-card">
+            <div class="proj-card-inner">
+              <div class="proj-card-head">
+                <h3 class="proj-name" data-en="Raigad Estate Phase- III">रायगड इस्टेट फेज- III</h3>
+                <p class="proj-location" data-en="Sector 31, Taloja">सेक्टर ३१, तळोजा</p>
+                <p class="proj-rera-line" data-en="Non-PMAY Maha RERA no. P52000034514">NON-PMAY महारेरा नोंदणी क्र. P52000034514</p>
+                <div class="proj-top-row">
+                  <span class="proj-type-bar" data-en="Configuration: 1 BHK">घराचा प्रकार: १ बीएचके</span>
+                  <img class="proj-qr" src="Assets/project Images/Taloja Sector -31  P52000034514.PNG" alt="MahaRERA QR P52000034514" loading="lazy" />
+                </div>
+                <p class="proj-completion" data-en="Completion date: OC received">पूर्णतेची तारीख : OC प्राप्त</p>
+                <a class="proj-direction-link" href="https://maps.google.com/?q=Taloja+Sector+31+Navi+Mumbai" target="_blank" rel="noopener" data-en="Get Direction">Get Direction</a>
+              </div>
+              <div class="proj-image-stage">
+                <img src="Assets/project Images/sector-31.jpg" alt="रायगड इस्टेट फेज- III" loading="lazy" />
+                <div class="proj-coming-soon" data-en="COMING SOON">लवकरच येत आहे</div>
+              </div>
+              <div class="proj-bottom-specs">
+                <p data-en="Configuration: 1 BHK">घराचा प्रकार: १ बीएचके</p>
+                <p data-en="More details soon">अधिक तपशील लवकरच</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <button class="proj-arrow proj-arrow--next" id="proj-next" aria-label="पुढील" data-en-aria="Next">&#8250;</button>
+      </div>
+
+      <p class="floor-price-note" data-en="* Floor price of ₹ 10/- per sq. ft. per floor will be applicable from the 6th floor and above">* ६ व्या मजल्यापासून आणि त्यावरील मजल्यांसाठी प्रति मजला, प्रति चौ. फूट ₹ १०/- प्रमाणे फ्लोअर किंमत लागू राहील</p>
+    </section>
+
+    <!-- ===== AMENITIES ===== -->
+    <section class="amenities-section">
+      <div class="amenities-inner">
+        <h2 class="section-title section-title--underline" data-en="Project Amenities">प्रकल्प सुविधा</h2>
+        <div class="amenities-container">
+          <div class="amenities-row">
+            <div class="amenity">
+              <div class="amenity-icon">
+                <img src="Assets/Icons/CIDCO Estate - Landing Page _ 2-6-26-19.png" alt="" />
+              </div>
+              <span data-en="Shopping Plaza">शॉपिंग प्लाझा</span>
+            </div>
+            <div class="amenity-divider"></div>
+            <div class="amenity">
+              <div class="amenity-icon">
+                <img src="Assets/Icons/CIDCO Estate - Landing Page _ 2-6-26-20.png" alt="" />
+              </div>
+              <span data-en="Lawn">लॉन</span>
+            </div>
+            <div class="amenity-divider"></div>
+            <div class="amenity">
+              <div class="amenity-icon">
+                <img src="Assets/Icons/CIDCO Estate - Landing Page _ 2-6-26-21.png" alt="" />
+              </div>
+              <span data-en="Walking Track">वॉकिंग ट्रॅक</span>
+            </div>
+            <div class="amenity-divider"></div>
+            <div class="amenity">
+              <div class="amenity-icon">
+                <img src="Assets/Icons/CIDCO Estate - Landing Page _ 2-6-26-22.png" alt="" />
+              </div>
+              <span data-en="Gazebo Seating">गेझिबो सिटिंग</span>
+            </div>
+            <div class="amenity-divider"></div>
+            <div class="amenity">
+              <div class="amenity-icon">
+                <img src="Assets/Icons/CIDCO Estate - Landing Page _ 2-6-26-23.png" alt="" />
+              </div>
+              <span data-en="Seating Area">बैठकीची जागा</span>
+            </div>
+          </div>
+          <div class="amenities-row">
+            <div class="amenity">
+              <div class="amenity-icon">
+                <img src="Assets/Icons/CIDCO Estate - Landing Page _ 2-6-26-24.png" alt="" />
+              </div>
+              <span data-en="Children's Play Area">लहान मुलांचे क्रीडाक्षेत्र</span>
+            </div>
+            <div class="amenity-divider"></div>
+            <div class="amenity">
+              <div class="amenity-icon">
+                <img src="Assets/Icons/CIDCO Estate - Landing Page _ 2-6-26-25.png" alt="" />
+              </div>
+              <span data-en="Amphitheatre">अ‍ॅम्फिथिएटर</span>
+            </div>
+            <div class="amenity-divider"></div>
+            <div class="amenity">
+              <div class="amenity-icon">
+                <img src="Assets/Icons/CIDCO Estate - Landing Page _ 2-6-26-26.png" alt="" />
+              </div>
+              <span data-en="Community Centre">सामुदायिक केंद्र</span>
+            </div>
+            <div class="amenity-divider"></div>
+            <div class="amenity">
+              <div class="amenity-icon">
+                <img src="Assets/Icons/CIDCO Estate - Landing Page _ 2-6-26-27.png" alt="" />
+              </div>
+              <span data-en="Half Court">हाफ कोर्ट</span>
+            </div>
+          </div>
+        </div>
+        <p class="amenity-note" data-en="* These are common amenities and may vary per project.">* या सामान्य सुविधा आहेत आणि प्रत्येक प्रकल्पानुसार बदलू शकतात.</p>
+      </div>
+    </section>
+
+    <!-- ===== CONTRACTORS ===== -->
+    <section class="contractors-section" id="partners">
+      <div class="contractors-content">
+        <h2 class="section-title section-title--contractor" data-en="Our Construction Contractors">आमचे कंस्ट्रक्शन कॉन्ट्रॅक्टर्स</h2>
+        <div class="contractors-logos">
+          <div class="contractor-logo">
+            <img src="Assets/Logo/lt-realty-logo-tight.png" alt="L&T Realty" />
+          </div>
+          <div class="contractor-logo">
+            <img src="Assets/Logo/shirke-logo-tight.png" alt="B.G. Shirke" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <!-- Left Leaf Decor -->
+      <div class="footer-decor-left" aria-hidden="true">
+        <img src="Assets/Leaf-01.png" alt="" />
+      </div>
+
+      <!-- Right Leaf Decor -->
+      <div class="footer-decor-right" aria-hidden="true">
+        <img src="Assets/Leaf-02.png" alt="" />
+      </div>
+      <div class="footer-body">
+        <div class="footer-left">
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="#about" data-en="CIDCO Estate">सिडको इस्टेट</a>
+            <a href="#why" data-en="Why Taloja?">तळोजाच का?</a>
+            <a href="#connectivity" data-en="Connectivity">कनेक्टिव्हिटी</a>
+            <a href="#projects" data-en="Project Details">प्रकल्प तपशील</a>
+            <a href="#partners" data-en="Our Partners">आमचे भागीदार</a>
+          </nav>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-brand-wrap">
+            <div class="footer-logo-crop">
+              <img src="Assets/Logo/cidco-estate-logo-cropped.png" alt="CIDCO Estate" />
+            </div>
+            <div class="footer-logo-text" aria-label="तरक्की का नाम तळोजा (खारघर पूर्व)">
+              <span data-en="The name of progress, Taloja">तरक्की का नाम तळोजा</span>
+              <small data-en="(Kharghar East)">(खारघर पूर्व)</small>
+            </div>
+          </div>
+          <div class="footer-social">
+            <span data-en="Follow us:">फॉलो करा:</span>
+            <a href="#" aria-label="Facebook" class="social-link">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter" class="social-link">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram" class="social-link">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube" class="social-link">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.95C18.88 4 12 4 12 4s-6.88 0-8.59.47a2.78 2.78 0 0 0-1.95 1.95A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+            </a>
+          </div>
+          <div class="footer-helpline">
+            <div class="helpline-row">
+              <span data-en="Helpline Number:">हेल्पलाईन क्रमांक:</span>
+              <div class="helpline-numbers">
+                <a href="tel:+919930870000">+९१ ९९३०८ ७००००</a>
+                <a href="tel:+918062368000">+९१ ८०६२३ ६८०००</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer">
+        <p data-en="Disclaimer: The amenities, details, infrastructure, and photographs displayed on this website are representative. They have been used to give an idea of the project location and the homes/apartments there. Therefore, there may be differences between what is mentioned here and the actual situation. The surroundings, interior design, color scheme, etc. have been used for reference only and may actually be different or may have changed.">अस्वीकरण : या संकेतस्थळावर केलेल्या दर्शविण्यात आलेल्या सोयी सुविधा, तपशील, पायाभूत सुविधा, छायाचित्रे प्रतिनिधिक आहेत. प्रकल्पाच्या ठिकाणाची, तेथील घरांची/सदनिकांची कल्पना यावी, यासाठी त्यांचा उपयोग करण्यात आला आहे. त्यामुळे येथे नमूद केलेल्या गोष्टी आणि वास्तविक परिस्थिती यात बदल असू शकतो. आजूबाजूचा परिसर, अंतर्गत रचना, रंगसंगती, इत्यादी गोष्टींचा केवळ संदर्भ म्हणून उपयोग करण्यात आला आहे प्रत्यक्षात त्या वेगळ्या असू शकतात किंवा त्यात बदलही झालेला असू शकतो.</p>
+      </div>
+    </footer>
+
+    <!-- ===== FLOATING BTNS ===== -->
+    <div class="floating-ctas">
+      <button class="float-enquire" type="button" id="open-modal-float">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <span data-en="Enquire Now">चौकशी करा</span>
+      </button>
+      <a class="float-call" href="tel:+919930870000" aria-label="Call us">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.01L6.6 10.8z"/></svg>
+      </a>
+    </div>
+
+    <!-- ===== ENQUIRY MODAL ===== -->
+    <div class="modal" id="enquiry-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-backdrop" id="modal-backdrop"></div>
+      <div class="modal-box">
+        <button class="modal-close" id="modal-close" type="button" aria-label="बंद करा">&#10005;</button>
+        <div class="modal-layout">
+          <div class="modal-logo">
+            <img src="Assets/Logo/cidco-estate-logo-cropped.png" alt="CIDCO Estate" />
+          </div>
+          <div class="modal-form-panel">
+            <h2 class="modal-title" id="modal-title" data-en="Register your name and mobile number to get more information about the upcoming CIDCO housing project at CIDCO Estate">सिडको इस्टेट येथील आगामी सिडको गृहप्रकल्पाविषयी अधिक माहिती मिळवण्यासाठी आपले नाव आणि मोबाइल क्रमांक नोंदवा</h2>
+            <form id="enquiry-form" novalidate>
+              <div class="form-field">
+                <input type="text" name="name" placeholder="संपूर्ण नाव*" required autocomplete="name" data-en-placeholder="Full Name*" />
+              </div>
+              <div class="form-field form-field--phone">
+                <span class="phone-code" data-en="+91">+९१</span>
+                <input type="tel" name="phone" placeholder="तुमचा १० अंकी मोबाइल क्रमांक" required autocomplete="tel" maxlength="10" data-en-placeholder="Your 10 digit mobile number" />
+              </div>
+              <div class="form-field">
+                <input type="email" name="email" placeholder="ई-मेल आईडी (अनिवार्य नाही)" autocomplete="email" data-en-placeholder="Email ID (optional)" />
+              </div>
+              <label class="form-check">
+                <input type="checkbox" required />
+                <span data-en="I agree to the Terms & Conditions and Privacy Policy.">मी अटी आणि शर्तींशी आणि नियम आणि गोपनीयतेच्या, धोरणाशी सहमती दर्शवली आहे.</span>
+              </label>
+              <button class="form-submit" type="submit" data-en="Submit">सबमिट करा</button>
+              <p class="form-phone-note" data-en="For more enquiries call us: (+91) 9930870000">अधिक चौकशीसाठी आम्हाला फोन करा : (+९१) ९९३०८७००००</p>
+              <p class="form-success" id="form-success" hidden data-en="Thank you! Our representative will contact you soon.">धन्यवाद! आमचे प्रतिनिधी लवकरच तुमच्याशी संपर्क साधतील.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
