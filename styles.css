@@ -2106,8 +2106,8 @@ body {
   }
 
   .lang-toggle {
-    right: auto;
-    left: calc(50% + min(410px, 42vw));
+    right: 16px;
+    left: auto;
     top: 36px;
   }
 
@@ -2264,7 +2264,20 @@ body {
   }
 
   .footer-body {
+    grid-template-columns: 1fr;
     padding-block: 64px 52px;
+  }
+
+  .footer-left {
+    align-items: center;
+  }
+
+  .footer-right {
+    width: 100%;
+    min-height: auto;
+    padding-left: 0;
+    border-left: 0;
+    text-align: center;
   }
 
   .footer-disclaimer {
