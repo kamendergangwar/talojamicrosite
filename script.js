@@ -155,7 +155,7 @@
   let   projCur    = 0;
 
   function projVisibleCount() {
-    return window.innerWidth > 960 ? 3 : 1;
+    return window.innerWidth > 1180 ? 3 : 1;
   }
 
   function updateProjCarousel() {
