@@ -10,14 +10,39 @@
   const siteNav = document.getElementById('site-nav');
   const navLinks = siteNav.querySelectorAll('a');
   const sections = ['about', 'why', 'connectivity', 'projects', 'partners'].map(id => document.getElementById(id));
+  const headerRevealZone = 28;
+  const headerAutoHideQuery = window.matchMedia('(min-width: 1181px)');
+  let headerHideTimer;
+  let scrollTicking = false;
 
-  window.addEventListener('scroll', () => {
+  function showHeader() {
+    header.classList.remove('is-hidden');
+    scheduleHeaderHide();
+  }
+
+  function hideHeader() {
+    const isMenuOpen = siteNav.classList.contains('is-open');
+    if (headerAutoHideQuery.matches && !isMenuOpen) header.classList.add('is-hidden');
+  }
+
+  function scheduleHeaderHide() {
+    clearTimeout(headerHideTimer);
+    if (!headerAutoHideQuery.matches) {
+      header.classList.remove('is-hidden');
+      return;
+    }
+    headerHideTimer = setTimeout(hideHeader, 3000);
+  }
+
+  function updateScrollspy() {
+    const currentScrollY = window.scrollY;
+
     // Toggle header scrolled styling
-    header.classList.toggle('scrolled', window.scrollY > 80);
+    header.classList.toggle('scrolled', currentScrollY > 80);
 
     // Scrollspy to set active nav link
     let currentSectionId = '';
-    const scrollPos = window.scrollY + 250;
+    const scrollPos = currentScrollY + 250;
 
     sections.forEach(sec => {
       if (sec && scrollPos >= sec.offsetTop) {
@@ -34,7 +59,25 @@
         link.classList.toggle('active', i === 0);
       });
     }
+
+    scrollTicking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!scrollTicking) {
+      window.requestAnimationFrame(updateScrollspy);
+      scrollTicking = true;
+    }
   }, { passive: true });
+
+  document.addEventListener('pointermove', e => {
+    if (headerAutoHideQuery.matches && e.clientY <= headerRevealZone) showHeader();
+  }, { passive: true });
+
+  headerAutoHideQuery.addEventListener('change', scheduleHeaderHide);
+
+  updateScrollspy();
+  scheduleHeaderHide();
 
 
   /* -------- MOBILE MENU -------- */
@@ -43,6 +86,12 @@
   menuToggle.addEventListener('click', () => {
     const open = siteNav.classList.toggle('is-open');
     menuToggle.setAttribute('aria-expanded', String(open));
+    if (open) {
+      clearTimeout(headerHideTimer);
+      header.classList.remove('is-hidden');
+    } else {
+      scheduleHeaderHide();
+    }
   });
 
   navLinks.forEach(link => {
@@ -53,6 +102,7 @@
 
       siteNav.classList.remove('is-open');
       menuToggle.setAttribute('aria-expanded', 'false');
+      scheduleHeaderHide();
     });
   });
 
@@ -160,27 +210,57 @@
 
   function updateProjCarousel() {
     const count = projVisibleCount();
-    const maxStart = Math.max(0, projCards.length - count);
-    if (projCur > maxStart) projCur = maxStart;
-    const featuredIndex = count === 3 ? projCur + 1 : projCur;
+    const maxIndex = Math.max(0, projCards.length - 1);
+    if (projCur > maxIndex) projCur = maxIndex;
+    const visibleIndexes = count === 3 && projCards.length > 1
+      ? [
+          (projCur - 1 + projCards.length) % projCards.length,
+          projCur,
+          (projCur + 1) % projCards.length
+        ]
+      : [projCur];
+    const featuredIndex = projCur;
 
     projCards.forEach((card, index) => {
-      const visible = index >= projCur && index < projCur + count;
+      const visibleOrder = visibleIndexes.indexOf(index);
+      const visible = visibleOrder !== -1;
       card.classList.toggle('visible', visible);
       card.classList.toggle('proj-card--featured', visible && index === featuredIndex);
+      card.style.order = visible ? String(visibleOrder) : '';
     });
   }
 
   projPrev.addEventListener('click', () => {
-    const maxStart = Math.max(0, projCards.length - projVisibleCount());
-    projCur = projCur <= 0 ? maxStart : projCur - 1;
+    const maxIndex = Math.max(0, projCards.length - 1);
+    projCur = projCur <= 0 ? maxIndex : projCur - 1;
     updateProjCarousel();
   });
   projNext.addEventListener('click', () => {
-    const maxStart = Math.max(0, projCards.length - projVisibleCount());
-    projCur = projCur >= maxStart ? 0 : projCur + 1;
+    const maxIndex = Math.max(0, projCards.length - 1);
+    projCur = projCur >= maxIndex ? 0 : projCur + 1;
     updateProjCarousel();
   });
+
+  const projCarousel = document.getElementById('proj-carousel');
+  let projTouchX = null;
+
+  projCarousel.addEventListener('touchstart', e => {
+    if (projVisibleCount() !== 1) return;
+    projTouchX = e.touches[0].clientX;
+  }, { passive: true });
+
+  projCarousel.addEventListener('touchend', e => {
+    if (projTouchX === null || projVisibleCount() !== 1) return;
+    const diff = projTouchX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) {
+      const maxIndex = Math.max(0, projCards.length - 1);
+      projCur = diff > 0
+        ? (projCur >= maxIndex ? 0 : projCur + 1)
+        : (projCur <= 0 ? maxIndex : projCur - 1);
+      updateProjCarousel();
+    }
+    projTouchX = null;
+  }, { passive: true });
 
   updateProjCarousel();
   window.addEventListener('resize', updateProjCarousel, { passive: true });
