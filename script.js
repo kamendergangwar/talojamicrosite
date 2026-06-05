@@ -314,6 +314,7 @@
   const modalClose   = document.getElementById('modal-close');
   const backdrop     = document.getElementById('modal-backdrop');
   const openFloat    = document.getElementById('open-modal-float');
+  const floatingCtas = document.querySelector('.floating-ctas');
   const enquiryForm  = document.getElementById('enquiry-form');
   const formSuccess  = document.getElementById('form-success');
 
@@ -346,6 +347,16 @@
     });
     setTimeout(closeModal, 3500);
   });
+
+  const footer = document.querySelector('.site-footer');
+  if (floatingCtas && footer && 'IntersectionObserver' in window) {
+    const footerObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        floatingCtas.classList.toggle('is-hidden', entry.isIntersecting);
+      });
+    }, { threshold: 0.08 });
+    footerObserver.observe(footer);
+  }
 
   /* -------- IMAGE ZOOM VIEWER -------- */
   const imageViewer = document.getElementById('image-viewer');
