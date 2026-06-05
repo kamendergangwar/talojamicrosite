@@ -453,6 +453,12 @@
     el.setAttribute('data-mr-src', el.currentSrc || el.getAttribute('src'));
   });
 
+  // Store original Marathi hrefs
+  const hrefEls = document.querySelectorAll('[data-en-href]');
+  hrefEls.forEach(el => {
+    el.setAttribute('data-mr-href', el.getAttribute('href'));
+  });
+
   function switchLanguage(lang) {
     if (lang === currentLang) return;
     currentLang = lang;
@@ -497,6 +503,12 @@
           el.play().catch(() => {});
         }
       }
+    });
+
+    // Switch language-specific links
+    hrefEls.forEach(el => {
+      const nextHref = lang === 'en' ? el.getAttribute('data-en-href') : el.getAttribute('data-mr-href');
+      if (nextHref) el.setAttribute('href', nextHref);
     });
 
     // Update active state on all lang buttons (desktop + mobile)
