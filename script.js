@@ -347,6 +347,71 @@
     setTimeout(closeModal, 3500);
   });
 
+  /* -------- IMAGE ZOOM VIEWER -------- */
+  const imageViewer = document.getElementById('image-viewer');
+  const imageViewerImg = document.getElementById('image-viewer-img');
+  const imageViewerStage = document.getElementById('image-viewer-stage');
+  const imageViewerBackdrop = document.getElementById('image-viewer-backdrop');
+  const imageViewerClose = document.getElementById('image-viewer-close');
+  const imageZoomIn = document.getElementById('image-zoom-in');
+  const imageZoomOut = document.getElementById('image-zoom-out');
+  let imageZoom = 1;
+
+  function updateImageZoom() {
+    imageViewerImg.style.maxWidth = `${92 * imageZoom}vw`;
+    imageViewerImg.style.maxHeight = `${82 * imageZoom}vh`;
+    imageViewerStage.classList.toggle('is-zoomed', imageZoom > 1);
+    imageZoomOut.disabled = imageZoom <= 1;
+    imageZoomIn.disabled = imageZoom >= 4;
+  }
+
+  function openImageViewer(sourceImg) {
+    imageZoom = 1;
+    imageViewerImg.src = sourceImg.currentSrc || sourceImg.src;
+    imageViewerImg.alt = sourceImg.alt || 'Image preview';
+    updateImageZoom();
+    imageViewer.classList.add('is-open');
+    imageViewer.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    imageViewerClose.focus();
+  }
+
+  function closeImageViewer() {
+    imageViewer.classList.remove('is-open');
+    imageViewer.setAttribute('aria-hidden', 'true');
+    imageViewerImg.removeAttribute('src');
+    document.body.style.overflow = modal.classList.contains('is-open') ? 'hidden' : '';
+  }
+
+  document.querySelectorAll('.zoomable-image').forEach(img => {
+    img.setAttribute('tabindex', '0');
+    img.setAttribute('role', 'button');
+    img.addEventListener('click', () => openImageViewer(img));
+    img.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openImageViewer(img);
+      }
+    });
+  });
+
+  imageZoomIn.addEventListener('click', () => {
+    imageZoom = Math.min(4, imageZoom + 0.25);
+    updateImageZoom();
+  });
+
+  imageZoomOut.addEventListener('click', () => {
+    imageZoom = Math.max(1, imageZoom - 0.25);
+    updateImageZoom();
+  });
+
+  imageViewerClose.addEventListener('click', closeImageViewer);
+  imageViewerBackdrop.addEventListener('click', closeImageViewer);
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && imageViewer.classList.contains('is-open')) closeImageViewer();
+  });
+
 
   /* -------- LANGUAGE TOGGLE (ENG / Marathi) -------- */
   const langButtons = document.querySelectorAll('.lang-btn');
