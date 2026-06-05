@@ -335,6 +335,16 @@
   modalClose.addEventListener('click', closeModal);
   backdrop.addEventListener('click', closeModal);
 
+  document.querySelectorAll('.js-open-modal').forEach(el => {
+    el.addEventListener('click', openModal);
+    el.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openModal();
+      }
+    });
+  });
+
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
   });
