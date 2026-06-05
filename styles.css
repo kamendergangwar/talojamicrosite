@@ -1302,6 +1302,10 @@ ul { list-style: none; }
   transform: translateX(5px);
 }
 
+html[lang="en"] .footer-nav a {
+  font-size: clamp(1.18rem, 1.42vw, 1.68rem);
+}
+
 .footer-center {
   display: flex;
   flex-direction: column;
