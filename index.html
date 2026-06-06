@@ -600,16 +600,18 @@
       <div class="modal-backdrop" id="modal-backdrop"></div>
       <div class="modal-box">
         <button class="modal-close" id="modal-close" type="button" aria-label="बंद करा">&#10005;</button>
-        <h2 class="modal-title" id="modal-title" data-en="Please fill in your details or scan to get more updates on upcoming<br>CIDCO Estate projects.">सिडको इस्टेटच्या आगामी गृहप्रकल्पांची<br>माहिती मिळवण्यासाठी कृपया आपले तपशील भरा किंवा स्कॅन करा</h2>
-        <div class="modal-layout">
+        <div class="modal-header">
           <div class="modal-logo">
             <img
               src="Assets/Logo/cidco-estate-logo-footer-mr-cropped.png"
               data-en-src="Assets/Logo/cidco-estate-logo-footer-en-cropped.png"
               alt="CIDCO Estate - तरक्की का नाम तळोजा (खारघर पूर्व)" />
           </div>
-          <div class="modal-form-panel">
-            <form id="enquiry-form" novalidate>
+          <h2 class="modal-title" id="modal-title" data-en="Please fill in your details <span class='modal-title-small'>or scan</span> to get updates on upcoming<br>CIDCO Estate projects.">सिडको इस्टेटच्या आगामी गृहप्रकल्पांची<br>माहिती मिळवण्यासाठी कृपया<br><span class="modal-title-small">आपले तपशील भरा किंवा स्कॅन करा</span></h2>
+        </div>
+        <form id="enquiry-form" novalidate>
+          <div class="modal-layout">
+            <div class="modal-form-panel">
               <div class="form-field">
                 <input type="text" name="name" placeholder="संपूर्ण नाव*" required autocomplete="name" data-en-placeholder="Full Name*" />
               </div>
@@ -624,15 +626,16 @@
                 <input type="checkbox" required />
                 <span data-en="I agree to the Terms & Conditions and <strong>Privacy Policy</strong>.">मी अटी आणि शर्तींशी आणि <strong>नियम आणि गोपनीयतेच्या,</strong> धोरणाशी सहमती दर्शवली आहे.</span>
               </label>
-              <button class="form-submit" type="submit" data-en="Submit">सबमिट करा</button>
-              <p class="form-phone-note" data-en="For more enquiries call us: (+91) 9930870000">अधिक चौकशीसाठी आम्हाला फोन करा : (+९१) ९९३०८७००००</p>
-              <p class="form-success" id="form-success" hidden data-en="Thank you! Our representative will contact you soon.">धन्यवाद! आमचे प्रतिनिधी लवकरच तुमच्याशी संपर्क साधतील.</p>
-            </form>
+            </div>
+            <div class="modal-divider" aria-hidden="true"><span data-en="or">किंवा</span></div>
+            <div class="modal-qr">
+              <img src="Assets/Icons/Image_20260605_121802_195.jpeg" alt="WhatsApp QR Code" loading="lazy" />
+            </div>
           </div>
-          <div class="modal-qr">
-            <img src="Assets/Icons/Image_20260605_121802_195.jpeg" alt="WhatsApp QR Code" loading="lazy" />
-          </div>
-        </div>
+          <button class="form-submit" type="submit" data-en="Submit">सबमिट करा</button>
+          <p class="form-phone-note" data-en="For more enquiries call us: (+91) 9930870000">अधिक चौकशीसाठी आम्हाला फोन करा : (+९१) ९९३०८७००००</p>
+          <p class="form-success" id="form-success" hidden data-en="Thank you! Our representative will contact you soon.">धन्यवाद! आमचे प्रतिनिधी लवकरच तुमच्याशी संपर्क साधतील.</p>
+        </form>
       </div>
     </div>
 

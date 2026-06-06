@@ -319,13 +319,17 @@
   const formSuccess  = document.getElementById('form-success');
 
   function openModal() {
+    if (modal.classList.contains('is-open')) return;
     modal.classList.add('is-open');
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
-    setTimeout(() => modal.querySelector('input')?.focus(), 60);
+    window.requestAnimationFrame(() => {
+      modal.querySelector('input')?.focus({ preventScroll: true });
+    });
   }
 
   function closeModal() {
+    if (!modal.classList.contains('is-open')) return;
     modal.classList.remove('is-open');
     modal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
