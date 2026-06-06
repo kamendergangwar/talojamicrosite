@@ -812,6 +812,7 @@ ul { list-style: none; }
   border-radius: 34px;
   overflow: visible;
   padding: 20px 28px 16px;
+  font-family: 'Noto Sans Devanagari', 'Poppins', system-ui, sans-serif;
   box-shadow: 0 18px 44px rgba(0, 0, 0, 0.22);
   border: 1px solid rgba(255, 255, 255, 0.6);
   transition: transform 0.35s ease, opacity 0.35s ease, filter 0.35s ease, box-shadow 0.35s ease;
@@ -838,9 +839,9 @@ ul { list-style: none; }
   text-align: center;
 }
 .proj-name {
-  font-size: clamp(1.5rem, 2.1vw, 2.35rem);
+  font-size: clamp(1.75rem, 2.5vw, 2.75rem);
   font-weight: 800;
-  line-height: 1.08;
+  line-height: 1;
   color: #214d86;
 }
 .proj-phase {
@@ -853,11 +854,14 @@ ul { list-style: none; }
   margin: 0;
   padding-top: 4px;
   border-top: 1px dotted rgba(15, 35, 55, 0.2);
-  font-size: 0.82rem;
+  font-size: clamp(1rem, 1.25vw, 1.25rem);
   font-weight: 800;
-  color: #172d4b;
+  color: #151515;
 }
-.proj-rera-line { font-size: 0.72rem; }
+.proj-rera-line {
+  font-size: clamp(0.82rem, 1vw, 1rem);
+  letter-spacing: 0;
+}
 .proj-top-row,
 .proj-unit-tabs {
   position: relative;
@@ -870,6 +874,16 @@ ul { list-style: none; }
   border-top: 1px solid rgba(33, 77, 134, 0.28);
   padding-top: 8px;
 }
+.proj-top-row:has(.proj-qr),
+.proj-unit-tabs:has(.proj-qr) {
+  padding-right: 116px;
+}
+.proj-card-head:has(.proj-qr) .proj-completion,
+.proj-card-head:has(.proj-qr) .proj-direction-link {
+  align-self: flex-start;
+  width: calc(100% - 116px);
+  justify-content: center;
+}
 .proj-type-bar,
 .proj-unit-tab {
   display: inline-flex;
@@ -880,8 +894,8 @@ ul { list-style: none; }
   border-radius: 2px;
   background: #2b6eab;
   color: #ffffff;
-  font-size: 0.78rem;
-  font-weight: 800;
+  font-size: clamp(0.88rem, 1vw, 1.08rem);
+  font-weight: 900;
 }
 .proj-unit-tab {
   border-radius: 999px;
@@ -897,8 +911,8 @@ ul { list-style: none; }
   position: absolute;
   right: 8px;
   top: 7px;
-  width: 58px;
-  height: 58px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   background: #ffffff;
 }
@@ -907,8 +921,8 @@ ul { list-style: none; }
   align-items: center;
   gap: 4px;
   color: #214d86;
-  font-size: 0.86rem;
-  font-weight: 800;
+  font-size: clamp(1rem, 1.2vw, 1.22rem);
+  font-weight: 900;
   text-decoration: none;
 }
 .proj-direction-link::before {
@@ -929,10 +943,10 @@ ul { list-style: none; }
 }
 .proj-image-stage {
   position: relative;
-  margin-top: 12px;
+  margin-top: 10px;
   border-radius: 0 22px 22px 22px;
   overflow: visible;
-  height: 210px;
+  height: 280px;
   background: #dce8f2;
 }
 .proj-image-stage img {
@@ -940,7 +954,7 @@ ul { list-style: none; }
   z-index: 1;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   display: block;
   border-radius: 0 22px 22px 22px;
 }
@@ -976,20 +990,20 @@ ul { list-style: none; }
 .proj-price-ribbon {
   position: absolute;
   z-index: 3;
-  /* left: -24px;
-  top: -24px;
-  width: 206px;
-  height: 72px; */
   left: -24px;
-    top: -15px;
-    width: 200px;
-    height: 66px;
-  padding: 18px 34px 10px 42px;
+  top: -15px;
+  width: 206px;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5px 34px 16px 28px;
   color: #ffffff;
   background: url("Assets/Icons/Price Strip Cropped.png") center / 100% 100% no-repeat;
   text-align: left;
-  font-weight: 800;
-  line-height: 1.05;
+  font-weight: 900;
+  line-height: 1;
 }
 .proj-price-ribbon::before {
   display: none;
@@ -997,19 +1011,42 @@ ul { list-style: none; }
 .proj-price-ribbon::after {
   display: none;
 }
-.proj-price-ribbon span,
 .proj-price-ribbon small { display: block; }
-.proj-price-ribbon span { font-size: 0.88rem; }
-.proj-price-ribbon small { margin-top: 2px; font-size: 0.5rem; opacity: .95; }
+.proj-price-line {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 14px;
+  width: auto;
+  white-space: nowrap;
+  line-height: 1;
+}
+.proj-price-label {
+  font-size: 1rem;
+  font-weight: 900;
+}
+.proj-price-amount {
+  font-size: 1.82rem;
+  font-weight: 900;
+  line-height: 0.9;
+}
+.proj-price-ribbon small {
+  margin-top: -3px;
+  font-size: 0.42rem;
+  line-height: 1;
+  opacity: .95;
+  white-space: nowrap;
+}
 .proj-price-ribbon--muted span { font-size: 0.78rem; }
 
 .proj-bottom-specs {
   margin-top: auto;
   padding-top: 8px;
   color: #111827;
-  font-size: 0.9rem;
-  font-weight: 800;
+  font-size: clamp(0.95rem, 1.1vw, 1.1rem);
+  font-weight: 900;
   line-height: 1.25;
+  text-align: center;
 }
 .proj-bottom-specs p {
   margin: 0;
@@ -1464,11 +1501,11 @@ html[lang="en"] .footer-nav-label {
 }
 
 .footer-qr img {
-  width: clamp(132px, 11.2vw, 210px);
-  aspect-ratio: 1;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   background: #ffffff;
-  padding: clamp(10px, 1vw, 16px);
+  padding: 10px;
 }
 
 .footer-qr p {
@@ -1664,8 +1701,8 @@ html[lang="en"] .footer-nav-label {
   justify-content: center;
 }
 .modal-qr img {
-  width: min(100%, 220px);
-  height: auto;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
 }
 
@@ -2141,9 +2178,6 @@ html[lang="en"] .footer-nav-label {
   .modal-logo img {
     width: min(240px, 82%);
   }
-  .modal-qr img {
-    width: min(180px, 60%);
-  }
   .modal-title {
     font-size: 1rem;
   }
@@ -2546,13 +2580,11 @@ body {
 
   .proj-top-row,
   .proj-unit-tabs {
-    padding-right: 60px;
+    padding-right: 110px;
   }
 
   .proj-qr {
     right: 0;
-    width: 50px;
-    height: 50px;
   }
 
   .proj-image-stage {
@@ -2564,7 +2596,15 @@ body {
     top: -20px;
     width: 186px;
     height: 65px;
-    padding: 16px 30px 9px 36px;
+    padding: 5px 30px 13px 26px;
+  }
+
+  .proj-price-label {
+    font-size: 0.9rem;
+  }
+
+  .proj-price-amount {
+    font-size: 1.58rem;
   }
 
   .amenities-row {
@@ -2691,7 +2731,7 @@ body {
   .proj-top-row,
   .proj-unit-tabs {
     padding-right: 0;
-    padding-bottom: 56px;
+    padding-bottom: 108px;
     flex-wrap: wrap;
   }
 
@@ -2969,10 +3009,6 @@ body {
 
   .footer-logo-crop {
     width: min(360px, 78vw);
-  }
-
-  .footer-qr img {
-    width: min(210px, 52vw);
   }
 
   .footer-pmay {
