@@ -2007,11 +2007,18 @@ html[lang="en"] .footer-nav-label {
   .why-bottom,
   .footer-body { grid-template-columns: 1fr; }
 
+  .about-text,
+  .why-text {
+    order: 2;
+  }
+
   .about-image {
+    order: 1;
     width: min(100%, 620px);
     justify-self: center;
   }
   .why-collage {
+    order: 1;
     width: min(100%, 720px);
     min-height: 500px;
     justify-self: center;
@@ -2229,6 +2236,28 @@ html[lang="en"] .footer-nav-label {
   .modal-layout {
     grid-template-columns: 1fr;
     gap: 22px;
+    display: contents;
+  }
+  #enquiry-form {
+    display: grid;
+  }
+  .modal-form-panel {
+    order: 1;
+  }
+  .form-submit {
+    order: 2;
+  }
+  .form-phone-note {
+    order: 3;
+  }
+  .form-success {
+    order: 4;
+  }
+  .modal-divider {
+    order: 5;
+  }
+  .modal-qr {
+    order: 6;
   }
   .modal-logo {
     min-height: auto;
@@ -2388,13 +2417,14 @@ body {
 
   .about-text,
   .why-text {
+    order: 2;
     max-width: 920px;
     margin-inline: auto;
   }
 
   .about-image,
   .why-collage {
-    order: 2;
+    order: 1;
   }
 
   .why-collage {
@@ -3130,6 +3160,12 @@ body {
   .footer-nav {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+
+  .footer-nav-col + .footer-nav-col {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 3px solid rgba(255, 255, 255, 0.82);
   }
 
   .footer-nav a,
