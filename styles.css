@@ -2683,50 +2683,139 @@ body {
   }
 
   .proj-carousel-wrap {
+    position: relative;
+    display: block;
     width: 100%;
-    grid-template-columns: 38px minmax(0, 1fr) 38px;
+    max-width: 390px;
+    gap: 8px;
   }
 
   .proj-carousel {
     max-width: 100%;
   }
 
+  .proj-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    width: 34px;
+    height: 34px;
+    border-width: 2px;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-50%);
+  }
+
+  .proj-arrow--prev {
+    left: -6px;
+  }
+
+  .proj-arrow--next {
+    right: -6px;
+  }
+
   .proj-card-inner {
+    min-height: auto;
     border-radius: 22px;
-    padding: 22px 18px 18px;
+    padding: 18px 14px 16px;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.22);
+  }
+
+  .proj-card-head {
+    gap: 7px;
   }
 
   .proj-name {
-    font-size: clamp(1.28rem, 6vw, 1.72rem);
+    font-size: clamp(1.2rem, 5.8vw, 1.58rem);
+    line-height: 1.06;
   }
 
-  .proj-top-row,
-  .proj-unit-tabs {
-    padding-right: 110px;
+  .proj-location,
+  .proj-rera-line,
+  .proj-completion {
+    font-size: 0.82rem;
+    line-height: 1.28;
+    padding-top: 7px;
+  }
+
+  .proj-rera-line {
+    font-size: 0.76rem;
+  }
+
+  .proj-top-row:has(.proj-qr),
+  .proj-unit-tabs:has(.proj-qr) {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-right: 0;
+    padding-top: 10px;
+  }
+
+  .proj-card-head:has(.proj-qr) .proj-completion,
+  .proj-card-head:has(.proj-qr) .proj-direction-link {
+    align-self: center;
+    width: 100%;
   }
 
   .proj-qr {
-    right: 0;
+    position: static;
+    width: 78px;
+    height: 78px;
+    flex: 0 0 auto;
+    transform: none;
   }
 
-  .proj-image-stage {
-    height: clamp(210px, 58vw, 280px);
+  .proj-type-bar,
+  .proj-unit-tab {
+    min-height: 30px;
+    padding: 6px 12px;
+    font-size: 0.82rem;
+    line-height: 1.1;
   }
 
-  .proj-price-ribbon {
-    left: -14px;
-    top: -20px;
-    width: 186px;
-    height: 65px;
-    padding: 5px 30px 13px 26px;
-  }
-
-  .proj-price-label {
+  .proj-direction-link {
+    justify-content: center;
     font-size: 0.9rem;
   }
 
+  .proj-direction-link::before {
+    width: 26px;
+    height: 26px;
+  }
+
+  .proj-image-stage {
+    height: clamp(190px, 56vw, 245px);
+    margin-top: 14px;
+    border-radius: 18px;
+  }
+
+  .proj-image-stage img {
+    border-radius: 18px;
+  }
+
+  .proj-price-ribbon {
+    left: -10px;
+    top: -16px;
+    width: 164px;
+    height: 58px;
+    padding: 4px 26px 12px 22px;
+  }
+
+  .proj-price-label {
+    font-size: 0.78rem;
+  }
+
   .proj-price-amount {
-    font-size: 1.58rem;
+    font-size: 1.36rem;
+  }
+
+  .proj-bottom-specs {
+    margin-top: 12px;
+  }
+
+  .proj-bottom-specs p,
+  .floor-price-note {
+    font-size: 0.84rem;
+    line-height: 1.35;
   }
 
   .amenities-row {
@@ -2853,13 +2942,10 @@ body {
   }
 
   .proj-carousel-wrap {
-    display: grid;
-    grid-template-columns: 32px minmax(0, 1fr) 32px;
-    gap: 8px;
+    max-width: 100%;
   }
 
   .proj-arrow {
-    display: flex !important;
     width: 32px;
     height: 32px;
     font-size: 1.6rem;
@@ -2867,20 +2953,6 @@ body {
 
   .proj-card-inner {
     padding-inline: 14px;
-  }
-
-  .proj-top-row,
-  .proj-unit-tabs {
-    padding-right: 0;
-    padding-bottom: 108px;
-    flex-wrap: wrap;
-  }
-
-  .proj-qr {
-    top: auto;
-    right: 50%;
-    bottom: 0;
-    transform: translateX(50%);
   }
 
   .amenities-row {
