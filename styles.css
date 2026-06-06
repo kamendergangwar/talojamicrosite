@@ -862,6 +862,14 @@ ul { list-style: none; }
   font-size: clamp(0.82rem, 1vw, 1rem);
   letter-spacing: 0;
 }
+.rera-status {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 8px;
+  padding-right: 10px;
+  border-right: 2px solid currentColor;
+  line-height: 1;
+}
 .proj-top-row,
 .proj-unit-tabs {
   position: relative;
