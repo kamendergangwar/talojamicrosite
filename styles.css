@@ -314,19 +314,27 @@ ul { list-style: none; }
   letter-spacing: 0;
   text-shadow: 0 2px 12px rgba(0,0,0,.5);
 }
-.slide-caption--partners { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.slide-caption.slide-caption--compact {
+  width: max-content;
+  max-width: min(820px, 72vw);
+}
+.slide-caption--partners { display: flex; flex-direction: column; align-items: center; gap: 18px; }
 .slide-partner-logos {
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(12px, 1.8vw, 22px);
+  margin-top: -76px;
 }
 .slide-partner-logos img {
-  height: 52px;
+  height: clamp(46px, 4.6vw, 70px);
   width: auto;
   object-fit: contain;
   background: white;
-  border-radius: 6px;
-  padding: 8px 14px;
+  border-radius: 8px;
+  padding: clamp(10px, 1vw, 14px) clamp(16px, 1.7vw, 24px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.22);
 }
 
 /* Hero arrows */
@@ -1664,7 +1672,7 @@ html[lang="en"] .footer-nav-label {
 .modal-box {
   position: relative;
   z-index: 1;
-  width: min(980px, calc(100% - 28px));
+  width: min(1040px, calc(100% - 28px));
   background: white;
   border-radius: 24px;
   padding: clamp(20px, 2vw, 30px) clamp(26px, 2.5vw, 42px) clamp(20px, 2vw, 28px);
@@ -1695,8 +1703,8 @@ html[lang="en"] .footer-nav-label {
 
 .modal-header {
   display: grid;
-  grid-template-columns: minmax(190px, 0.5fr) minmax(0, 1.5fr);
-  gap: clamp(18px, 2.4vw, 40px);
+  grid-template-columns: minmax(220px, 0.48fr) minmax(0, 1.52fr);
+  gap: clamp(22px, 3vw, 56px);
   align-items: center;
   margin-bottom: clamp(22px, 2.6vw, 38px);
 }
@@ -1713,7 +1721,7 @@ html[lang="en"] .footer-nav-label {
   min-height: 104px;
 }
 .modal-logo img {
-  width: min(100%, 230px);
+  width: min(100%, 255px);
   height: auto;
   object-fit: contain;
 }
@@ -1763,21 +1771,21 @@ html[lang="en"] .footer-nav-label {
 }
 
 .modal-title {
-  font-size: clamp(1.36rem, 1.94vw, 2.28rem);
+  font-size: clamp(1.35rem, 2.05vw, 2.25rem);
   font-weight: 700;
   color: #34479d;
-  line-height: 1.15;
+  line-height: 1.2;
   margin: 0;
   text-align: center;
+  letter-spacing: 0;
 }
 .modal-title-small {
-  display: inline-block;
-  font-size: 0.72em;
-  line-height: 1.2;
+  font-size: 1em;
+  line-height: inherit;
 }
 .form-check span strong {
   color: #34375f;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .form-field {
@@ -1856,7 +1864,7 @@ html[lang="en"] .footer-nav-label {
   display: block;
   width: min(205px, 72%);
   height: 46px;
-  margin: clamp(14px, 1.7vw, 22px) auto 14px;
+  margin: 14px auto 0;
   background: linear-gradient(100deg, #973944 0%, #2d67a4 100%);
   color: white;
   border-radius: 999px;
@@ -2252,20 +2260,17 @@ html[lang="en"] .footer-nav-label {
   .modal-form-panel {
     order: 1;
   }
-  .form-submit {
+  .form-phone-note {
     order: 2;
   }
-  .form-phone-note {
+  .form-success {
     order: 3;
   }
-  .form-success {
+  .modal-divider {
     order: 4;
   }
-  .modal-divider {
-    order: 5;
-  }
   .modal-qr {
-    order: 6;
+    order: 5;
   }
   .modal-logo {
     min-height: auto;
@@ -2274,7 +2279,7 @@ html[lang="en"] .footer-nav-label {
     width: min(240px, 82%);
   }
   .modal-title {
-    font-size: clamp(1.35rem, 6vw, 2.2rem);
+    font-size: clamp(1.08rem, 4.4vw, 1.38rem);
   }
   .form-field input,
   .form-field--phone {
