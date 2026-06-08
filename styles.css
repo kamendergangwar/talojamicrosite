@@ -2818,9 +2818,20 @@ body {
     line-height: 1.35;
   }
 
-  .amenities-row {
+  .amenities-container {
+    display: grid;
     grid-template-columns: repeat(2, minmax(120px, 1fr));
+    justify-items: center;
     gap: 26px 16px;
+    max-width: 360px;
+  }
+
+  .amenities-row {
+    display: contents;
+  }
+
+  .amenities-row:last-child .amenity:last-child {
+    grid-column: 1 / -1;
   }
 
   .amenity-icon {
@@ -2955,8 +2966,9 @@ body {
     padding-inline: 14px;
   }
 
-  .amenities-row {
+  .amenities-container {
     gap: 22px 12px;
+    max-width: 300px;
   }
 
   .amenity-icon {
