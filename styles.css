@@ -1862,14 +1862,14 @@ html[lang="en"] .footer-nav-label {
 
 .form-submit {
   display: block;
-  width: min(205px, 72%);
-  height: 46px;
-  margin: 14px auto 0;
+  width: min(165px, 58%);
+  height: 40px;
+  margin: 10px auto 0;
   background: linear-gradient(100deg, #973944 0%, #2d67a4 100%);
   color: white;
   border-radius: 999px;
   font-family: 'Noto Sans Devanagari', 'Poppins', system-ui, sans-serif;
-  font-size: clamp(0.92rem, 1.12vw, 1.12rem);
+  font-size: clamp(0.8rem, 0.95vw, 0.96rem);
   font-weight: 900;
   letter-spacing: 0;
   transition: transform .2s, filter .2s;
@@ -2311,8 +2311,8 @@ html[lang="en"] .footer-nav-label {
     width: min(260px, 72vw);
   }
   .form-submit {
-    width: min(240px, 82%);
-    height: 58px;
+    width: min(180px, 68%);
+    height: 44px;
   }
 }
 
