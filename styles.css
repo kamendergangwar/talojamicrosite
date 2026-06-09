@@ -739,7 +739,7 @@ ul { list-style: none; }
 .why-map {
   height: clamp(420px, 33vw, 560px);
   border-radius: 38px;
-  overflow: visible;
+  overflow: hidden;
   box-shadow: none;
   position: sticky;
   top: calc(var(--hdr-h) + 20px);
@@ -765,6 +765,24 @@ ul { list-style: none; }
   overflow: hidden;
   object-fit: cover;
   filter: saturate(0.9) contrast(1.03);
+  transform: scale(1);
+  transition: transform .35s ease, filter .35s ease;
+}
+.why-map:hover img,
+.why-map:focus-within img {
+  filter: saturate(1) contrast(1.06);
+  transform: scale(1.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .why-map img {
+    transition: none;
+  }
+
+  .why-map:hover img,
+  .why-map:focus-within img {
+    transform: none;
+  }
 }
 
 
@@ -1877,6 +1895,7 @@ html[lang="en"] .footer-nav-label {
 .form-submit:hover { filter: brightness(.96); transform: translateY(-1px); }
 
 .form-phone-note {
+  margin-top: 16px;
   font-size: clamp(0.8rem, 0.95vw, 0.95rem);
   color: #4d557a;
   font-weight: 700;
